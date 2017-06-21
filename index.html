@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Monk's Cafe">
+    <meta name="author" content="Daniel Snider">
+	<title>Unit 9 | Sublime Project</title>
+
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!--Theme CSS-->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!--Custom Font-->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">    
+</head>
+
+<style type="text/css">
+
+.div-border {
+	border: 1px solid #000;
+}
+
+.caption {
+	background-color: #fff;
+	margin: -20px;
+}
+
+.no-padding {
+	padding: 0px 0px 0px 0px;
+}
+
+#reservation {
+	background-color: #fff;
+}
+
+#testimonials {
+	background-color: #eeeeee;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr {
+	height: 40px;
+}
+
+tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+#ui-datepicker-div {
+	z-index: 100;
+	background-color: #fff;
+}
+
+.ui-datepicker-prev,
+.ui-datepicker-next {
+	margin: 60px;
+}
+
+.ui-datepicker-title,
+.ui-datepicker-header {
+	text-align: center;
+}
+
+</style>
+<body>
+
+<!-- Header & Hero Image START -->
+	 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container text-center">
+	        <div class="col-lg-12 responsive">
+			    <h1>Monk's Cafe</h1>
+			    <p>"The Coffee Shop"</p>
+			</div>
+        </div>
+    </nav>
+
+    <section id="hero">
+		<div>
+		    <img src="images/toms-restaurant.jpg" class="img-responsive">
+	    </div>
+    </section>
+<!-- Header & Hero Image END -->
+
+<!-- Reservation START -->
+	<section id="reservation">
+		<div class="container no-padding">
+	    	<div class="row">
+	    		<div class="col-lg-12">
+		    		<h1>Reservations</h1>
+		    	</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 reservations-div">
+		    		<h3>Make a Reservation</h3>
+		    		<form id="reservation-form">
+						<label for="name">Name</label><input type="text" id="namefield" placeholder="Full Name">
+						</br></br>
+						<label for="date">Day</label><input type="text" id="datepicker" placeholder="Choose A Date">
+						</br></br>
+						<button type="submit" value="Confirm" class="btn btn-xl">Confirm</button>
+					</form>
+		    	</div>
+				<div class="col-lg-6 reservations-div">
+		   			<h3>Existing Reservations</h3>
+		   			</br>
+				    <table style="margin: -5px;">
+						<tr>
+						    <th class="col-lg-4">Name</th>
+						    <th class="col-lg-4">Day</th>
+						</tr>
+						<tr>
+						    <td></td>
+						    <td></td>
+						</tr>
+						<tr>
+						    <td></td>
+						    <td></td>
+						</tr>
+						<tr>
+						    <td></td>
+						    <td></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- Reservation END -->
+
+<!-- Google Map & Review START -->
+	<section id="google-map">
+		<div class="container no-padding">
+			<div class="row">    
+		    	<div class="col-lg-12">
+		    		<h1>Come Dine with Us</h1>
+		    	</div>
+		    </div>
+			<div class="row">    
+		    	<div class="col-lg-12 no-padding">
+		    		<div id="map" style="height:400px"></div>
+		    	</div>
+		    </div>
+		</div>
+	</section>
+<!-- Google Map & Review END -->
+
+<!-- Testimonials START -->
+	<section id="testimonials">
+		<div class="container no-padding">
+			<div class="row">    
+		    	<div class="col-lg-12">
+		    		<h1>Testimonials</h1>
+		    	</div>
+		    </div>
+		    <div class="row caption">
+		    	<div class="col-lg-6 no-padding">
+		    		<img src="images/jerry.jpg" class="img-responsive" style="width: 100%;">
+		    	</div>
+				<div class="col-lg-6 quote text-center">
+					</br></br>
+		    		<p>“Big lettuce, big carrots, tomatoes like volleyballs.”
+		    			</br>
+		    			<span>— Jerry Seinfeld, on The BIG Salad</span>
+		    		</p>
+		    	</div>
+			</div>
+			<div class="row"></div>
+		</div>
+	</section>
+<!-- Testimonials END -->
+
+
+<!-- Scripts -->
+	<script src="js/jquery-3.0.0.js"></script>
+	<script src="js/main.js"></script>
+
+   <!--google maps api-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkDLDJUaN4-7fUogukalHZ3BhQy70GXis&callback=initMap" async defer></script>
+
+    <!--JQuery UI-->
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"></script>
+</body>
+</html>
