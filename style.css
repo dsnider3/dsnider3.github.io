@@ -694,10 +694,6 @@ section div ul li a:hover {
         align-self: center;
         justify-self: center;
     }
-    .item__things {
-        justify-content: space-evenly;
-    }
-
 }
 
 @media all and (min-width: 600px) {
@@ -828,7 +824,7 @@ section div ul li a:hover {
         grid-column: span 2;
     }
     .things__icon img {
-        width: 8rem;
+        width: 6rem;
     }
 }
 
