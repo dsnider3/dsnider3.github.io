@@ -1,0 +1,684 @@
+
+
+/* -------- Slide Device Layout Styling -------- */
+
+
+.scrollA {
+    animation: siteScrollA 20s infinite;
+}
+
+.scrollB {
+    animation: infoScroll 20s infinite;
+}
+
+.scrollC {
+    animation: siteScrollB 10s infinite;
+}
+
+
+.feature__abstract {
+    position: relative;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/*.feature__abstract > img {
+    position: absolute;
+    object-fit: contain;
+    opacity: 0.5;
+}*/
+
+/*.flip > .feature__img {
+    height: 75%;
+}*/
+
+
+
+
+/* -------- General Figure Styling -------- */
+
+
+figure {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+
+
+/* -------- Laptop Styling -------- */
+
+/*.laptop {
+    position: relative;
+    transform: scale(0.4);
+}
+
+
+.l_top {
+    padding: 195px 325px;
+    border-radius: 20px 20px 0 0;
+    border: 7px solid rgba(36, 51, 138, 0.95);
+    background: rgba(255,255,255,0.95);
+    position: relative;
+}
+
+
+.l_bottom {
+    padding: 15px 400px;
+    border-radius: 0 0 20px 20px;
+    border: 7px solid rgba(36, 51, 138, 0.95);
+    background: rgba(255,255,255,0.95);
+    position: absolute;
+    left: -75px;
+    bottom: -34px;
+}
+
+
+.l_screen {
+    position: absolute;
+    margin: 0 auto;
+    border: 2px solid rgba(36, 51, 138, 0.95);
+    box-shadow: 0 0 0 2px rgba(36, 51, 138, 0.25) inset;
+    overflow: hidden;
+    height: 325px;
+    width: 600px;
+    left: 25px;
+    top: 40px;
+}
+
+
+.l_camera {
+    position: absolute;
+    top: 12.5px;
+    left: 49%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid rgba(36, 51, 138, 0.95);
+    box-shadow: 0 0 0 2px rgba(36, 51, 138, 0.25) inset;
+}
+
+
+.l_divider {
+    width: 100%;
+    border: 1.5px solid rgba(36, 51, 138, 0.95);
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
+
+
+.l_latch {
+    width: 200px;
+    height: 15px;
+    border: 3px solid rgba(36, 51, 138, 0.95);
+    position: absolute;
+    left: 38%;
+    top: -3px;
+    border-radius: 0 0 20px 20px;
+    z-index: 10000;
+}*/
+
+
+
+
+/* -------- Smartphone Styling -------- */
+
+
+.smartphone {
+/*		opacity: 1;
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+
+	opacity: 0;
+	transition: all .33s ease-out;
+	-webkit-transform: translateY(25px);
+	-ms-transform: translateY(25px);
+	transform: translateY(25px);*/
+
+    position: relative;
+    height: 585px;
+    width: 320px;
+    background: rgba(255,255,255,0.95);
+    border: 6px solid rgba(36, 51, 138, 0.95);
+    border-radius: 40px;
+    transform: rotate(90deg) scale(0.55);
+}
+
+
+.s_cam_speaker {
+	display: block;
+    position: absolute;
+    top: 32px;
+    width: 110px;
+    padding-top: 7.5px;
+    border-radius: 18px;
+    box-shadow: 0 0 0 2px rgba(36, 51, 138, 0.25) inset;
+    height: 0;
+    left: 97.5px;
+    border: 2px solid rgba(36, 51, 138, 0.95);
+}
+
+
+.s_cam_speaker:after {
+	content: '';
+    width: 10px;
+    padding-top: 10px;
+    position: absolute;
+    top: -4px;
+    left: -35px;
+    border-radius: 50%;
+    border: 2px solid rgba(36, 51, 138, 0.95);
+    box-shadow: 0 0 0 2px rgba(36, 51, 138, 0.25) inset;
+}
+
+
+.s_screen {
+    position: absolute;
+    border: 2px solid rgba(36, 51, 138, 0.95);
+    box-shadow: 0 0 0 2px rgba(36, 51, 138, 0.25) inset;
+    left: -54.5px;
+    bottom: 140px;
+    height: 300px;
+    width: 415px;
+    overflow: hidden;
+    transform: rotate(-90deg);
+}
+
+
+.s_button_home {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-top: -3%;
+    width: 14%;
+    padding-top: 13%;
+    margin-left: -7%;
+    border-radius: 50%;
+    border: 2px solid rgba(36, 51, 138, 0.95);
+    box-shadow: 0 0 0 2px rgba(36, 51, 138, 0.25) inset;
+}
+
+
+
+
+/* -------- Browser Styling -------- */
+
+
+.browser {
+    border-radius: 20px 20px 0 0;
+    border: 4px solid rgba(36, 51, 138, 0.95);
+    background: rgba(255,255,255,0.95);
+    position: relative;
+    height: 600px;
+    width: 600px;
+    margin-top: 20%;
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.25);
+    z-index: -1;
+    transform: scale(0.4);
+    margin: 0 auto;
+}
+
+.hero__cases-right .browser {
+    position: absolute;
+}
+
+
+.b_cam {
+    display: block;
+    position: absolute;
+    top: 15px;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px rgba(36, 51, 138, 0.25) inset;
+    left: 47%;
+    border: 2px solid rgba(36, 51, 138, 0.95);
+}
+
+
+.b_screen {
+    position: absolute;
+    margin: 0 auto;
+    border: 2px solid rgba(36, 51, 138, 0.95);
+    box-shadow: 0 0 0 2px rgba(36, 51, 138, 0.25) inset;
+    left: 3px;
+    top: 40px;
+    overflow: hidden;
+    height: 550px;
+    width: 585px;
+}
+
+
+.b_button_one, .b_button_two, .b_button_three {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(247, 110, 115, 0.95);
+}
+
+
+.b_button_two {
+    left: 30px;
+    background: rgba(176, 155, 35, 0.75);
+}
+
+
+.b_button_three {
+    left: 45px;
+    background: rgba(0, 181, 173, 0.95);
+}
+
+
+
+
+/* -------- Tablet Styling -------- */
+
+
+.tablet {
+    border-radius: 40px;
+    border: 6px solid rgba(36, 51, 138, 0.95);
+    background: rgba(255,255,255,0.95);
+    position: relative;
+    width: 420px;
+    height: 600px;
+    transform: rotate(90deg) scale(0.55);
+}
+
+.hero__cases-right .tablet {
+    position: absolute;
+}
+
+
+.t_cam {
+    display: block;
+    position: absolute;
+    top: 15px;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px rgba(36, 51, 138, 0.25) inset;
+    left: 47%;
+    border: 2px solid rgba(36, 51, 138, 0.95);
+}
+
+
+.t_screen {
+    position: absolute;
+    margin: 0 auto;
+    border: 2px solid rgba(36, 51, 138, 0.95);
+    box-shadow: 0 0 0 2px rgba(36, 51, 138, 0.25) inset;
+    left: -47.5px;
+    bottom: 102.5px;
+    overflow: hidden;
+    height: 385px;
+    width: 500px;
+    transform: rotate(-90deg);
+}
+
+
+.t_button_home {
+    position: absolute;
+    bottom: 10px;
+    left: 47%;
+    margin-top: -3%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid rgba(36, 51, 138, 0.95);
+    box-shadow: 0 0 0 2px rgba(36, 51, 138, 0.25) inset;
+}
+
+
+
+
+/* -------- Desktop Styling -------- */
+
+
+.desktop {
+    padding: 250px 325px;
+    border-radius: 5%;
+    border: 6px solid rgba(36, 51, 138, 0.95);
+    background: rgba(255,255,255,0.95);
+/*    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.25);
+*/    position: relative;
+    margin: 0 0 35px 0;
+    transform: scale(0.4);
+}
+
+
+.d_cam {
+    display: block;
+    position: absolute;
+    top: 7.5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 18px;
+    box-shadow: 0 0 0 2px rgba(36, 51, 138, 0.25) inset;
+    left: 49%;
+    border: 2px solid rgba(36, 51, 138, 0.95);
+}
+
+
+.d_screen {
+    position: absolute;
+    margin: 0 auto;
+    border: 2px solid rgba(36, 51, 138, 0.95);
+    box-shadow: 0 0 0 2px rgba(36, 51, 138, 0.25) inset;
+    overflow: hidden;
+    height: 350px;
+    width: 600px;
+    left: 25px;
+    top: 25px;
+    transform: rotate(0deg);
+}
+
+
+.d_button_home {
+    position: absolute;
+    bottom: 23px;
+    width: 50px;
+    height: 50px;
+    margin-left: -5%;
+    border-radius: 50%;
+    border: 3px solid rgba(36, 51, 138, 0.95);
+    box-shadow: 0 0 0 2px rgba(36, 51, 138, 0.25) inset;
+}
+
+
+.d_divider {
+    width: 100%;
+    border: 1.5px solid rgba(36, 51, 138, 0.95);
+    position: absolute;
+    left: 0;
+    bottom: 75px;
+}
+
+
+.d_stand {
+    width: 250px;
+    display: block;
+    bottom: -117px;
+    left: 190px;
+    position: absolute;
+}
+
+
+.d_stand_style {
+    fill: rgba(255, 255, 255, 0.95); 
+    stroke: rgba(36, 51, 138, 0.95); 
+    stroke-miterlimit: 10;
+    stroke-width: 5px;
+}
+
+
+/* -------- Responsive Media Queries Styling -------- */
+
+
+@media screen and (min-width: 450px) {
+    .smartphone, .tablet {
+        transform: rotate(90deg) scale(0.6);
+    }
+    .desktop {
+        transform: scale(0.475);
+        border: 7px solid rgba(36, 51, 138, 0.95);
+    }
+    .hero__cases-right .tablet {
+        transform: rotate(90deg) scale(0.65);
+    }
+/*    .laptop {
+        transform: scale(0.6);
+    }*/
+    .cases__mockup {
+        grid-template-rows: 300px;
+    }
+    .cases__mockup .tablet {
+        transform: rotate(90deg) scale(0.66);
+    }
+    .cases__mockup .smartphone {
+        display: none;
+    }
+    .browser {
+        transform: scale(0.6);
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    .feature__abstract > .feature__img {
+        width: 90%;
+    }
+    .smartphone, .tablet {
+        transform: rotate(90deg) scale(0.65);
+    }
+    .desktop {
+        transform: scale(0.5);
+        border: 8px solid rgba(36, 51, 138, 0.95);
+    }
+    .d_stand_style {
+        stroke-width: 6px;
+    }
+    .hero__cases-right .tablet {
+        transform: rotate(90deg) scale(0.85);
+    }
+    .cases__mockup .tablet {
+        transform: rotate(90deg) scale(0.8);
+    }
+    .grid__image {
+        grid-row-gap: 30px;
+    }
+    .browser {
+        transform: scale(0.7);
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (min-width: 750px) {
+    .feature__context {
+        grid-column: span 3;
+        order: 1;
+    }
+    .flip > .feature__context {
+        grid-column: span 3;
+        order: 0;
+    }
+    .feature__abstract {
+        grid-column: span 3;
+        order: 1;
+    }
+    .feature__abstract > .feature__img {
+        width: 95%;
+    }
+/*    .laptop {
+        transform: scale(0.33);
+    }*/
+    .smartphone {
+        transform: rotate(0deg) scale(0.5);
+    }
+    .tablet {
+        transform: rotate(0deg) scale(0.4);
+    }
+    .s_screen {
+        left: -54.5px;
+        bottom: 140px;
+        width: 415px;
+        height: 300px;
+        transform: rotate(-90deg);
+    }
+/*    .t_screen {
+        height: 500px;
+        width: 385px;
+        left: 12px;
+        bottom: 45px;
+        transform: rotate(0deg);
+    }*/
+    .desktop {
+        transform: scale(0.3);
+    }
+    .hero__cases-right .tablet {
+        transform: rotate(90deg) scale(1);
+    }
+    .cases__mockup {
+         grid-template-rows: 400px;
+    }
+    .cases__mockup .tablet {
+        transform: rotate(90deg) scale(0.975);
+    }
+    .grid__image {
+        grid-row-gap: 30px;
+    }
+    .browser {
+        transform: scale(0.85);
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .smartphone {
+        transform: rotate(0deg) scale(0.6);
+    }
+    .tablet {
+        transform: rotate(0deg) scale(0.5);
+    }
+    .desktop {
+        transform: scale(0.4);
+    }
+    .cases__mockup {
+         grid-template-rows: 550px;
+    }
+    .cases__mockup .tablet {
+        transform: rotate(90deg) scale(1.1);
+    }
+    .grid__image {
+        grid-gap: 30px;
+    }
+}
+
+
+@media screen and (min-width: 1050px) {
+/*    .laptop {
+        transform: scale(0.4);
+    }*/
+    .smartphone {
+        transform: rotate(90deg) scale(0.5);
+    }
+    .tablet {
+        transform: rotate(90deg) scale(0.45);
+    }
+/*    .s_screen {
+        left: -54.5px;
+        bottom: 140px;
+        height: 300px;
+        width: 415px;
+        transform: rotate(-90deg);
+    }*/
+    .t_screen {
+        left: -47.5px;
+        bottom: 100px;
+        height: 385px;
+        width: 500px;
+        transform: rotate(-90deg);
+    }
+    .hero__cases-right .tablet {
+        transform: rotate(90deg) scale(0.75);
+    }
+    .cases__mockup {
+         grid-template-rows: 500px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .hero__cases-right .tablet {
+        transform: rotate(90deg) scale(0.8);
+    }
+    .cases__mockup {
+         grid-template-rows: 300px;
+    }
+    .cases__mockup .tablet {
+        grid-column: span 4;
+        grid-row: 1;
+        grid-template-rows: auto;
+        transform: rotate(90deg) scale(0.9);
+    }
+    .cases__mockup .smartphone {
+        display: initial;
+        grid-column: span 2;
+        grid-row: 1;
+        grid-template-rows: auto;
+        transform: rotate(0deg) scale(0.65);
+    }
+    .browser {
+        transform: scale(0.9);
+        margin: -200px 0 0 45%;
+    }
+}
+
+
+@media screen and (min-width: 1350px) {
+    .feature__abstract > .feature__img {
+        width: 90%;
+    }
+/*    .laptop {
+        transform: scale(0.5);
+    }*/
+    .smartphone {
+        transform: rotate(90deg) scale(0.6);
+        transition: all 0.5s ease-in-out;
+    }
+    .smartphone:hover {
+        transform: rotate(90deg) scale(0.9);
+        transition: all 0.5s ease-in-out;
+    }
+    .tablet {
+        transform: rotate(90deg) scale(0.55);
+        transition: all 0.5s ease-in-out;
+    }
+    .tablet:hover {
+        transform: rotate(90deg) scale(0.85);
+        transition: all 0.5s ease-in-out;
+    }
+    .desktop {
+        transform: scale(0.5);
+        transition: all 0.5s ease-in-out;
+    }
+    .desktop:hover {
+        transform: scale(0.8);
+        transition: all 0.5s ease-in-out;
+    }
+    .hero__cases-right .tablet {
+        transform: rotate(90deg) scale(0.85);
+    }
+    .browser {
+        transform: scale(1);
+        margin: -150px 0 0 52.5%;
+    }
+}
+
+
+@media screen and (min-width: 1500px) {
+    .feature__abstract > .feature__img {
+        height: 75%;
+    }
+    .hero__cases-right .tablet {
+        transform: rotate(90deg) scale(0.9);
+    }
+}

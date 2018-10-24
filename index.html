@@ -6,620 +6,433 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>CSS Grid Resume</title>
-      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:200,200i,400,400i,700,700i|Gloria+Hallelujah" rel="stylesheet">      
+      <title>My Portfolio Site - HTML &amp; CSS</title>
+      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:200,200i,400,400i,700,700i" rel="stylesheet">      
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="style.css">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/devices.css">
+      <link rel="stylesheet" type="text/css" media="screen" href="css/particles.css">
    </head>
    
    <body>
+
+
+
+      <a href="#content" class="skip-link" tabindex="1">Skip to Content</a>
+
+
+
+      <header id="header">
+
+         <input type="checkbox" class="nav-toggle" id="nav-toggle">
+         <label for="nav-toggle" class="nav-toggle-label">
+<!--             <button class="hamburger hamburger--spin" type="button">
+               <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+               </span>
+            </button>   -->
+            <span class="nav-hamburger"><i class="fas fa-bars"></i></span>         
+         </label>
+
+         <nav id="navbar">
+
+            <img class="nav-logo" src="img/so-logo-icon.svg" alt="hero image">
+
+            <ul class="nav__container">
+               <li class="nav-link" tabindex="2"><span class="link-number">01</span><a href="#">About</a></li>
+               <li class="nav-link" tabindex="3"><span class="link-number">02</span><a href="#">Services</a></li>
+<!--           <li class="flexspace"></li>-->               
+               <li class="nav-link" tabindex="4"><span class="link-number">03</span><a href="#">Work</a></li>
+<!--                <li class="nav-link"><span class="link-number">04</span><a href="#">Manifesto</a></li>
+ -->               <li class="nav-link" tabindex="5"><span class="link-number">04</span><a href="#">Resume / CV</a></li>
+            </ul>
+
+            <hr class="hr-menu"/>
+
+            <a class="button" href="mailto:manudan711@gmail.com" alt="Contact Now button">Contact Now</a>
+
+            <ul class="nav__social">
+               <li><a href="#"><i class="far fa-envelope"></i></a></li>             
+               <li><a href="https://www.facebook.com" data-tool-tip="Social accounts to come"><i class="fab fa-facebook-f"></i></a></li>
+               <li><a href="https://www.instagram.com" data-tool-tip="Social accounts to come"><i class="fab fa-instagram"></i></a></li>
+               <li><a href="https://www.twitter.com" data-tool-tip="Social accounts to come"><i class="fab fa-twitter"></i></a></li>
+               <li><a href="https://www.linkedin.com" data-tool-tip="Social accounts to come"><i class="fab fa-linkedin"></i></a></li>
+               <li><a href="https://www.dribbble.com" data-tool-tip="Social accounts to come"><i class="fab fa-dribbble"></i></a></li>
+               <li><a href="https://www.behance.net" data-tool-tip="Social accounts to come"><i class="fab fa-behance"></i></a></li>
+               <li><a href="https://www.github.com" data-tool-tip="Social accounts to come"><i class="fab fa-github"></i></a></li>
+            </ul>
+
+         </nav>
+      </header>
+
+      <div id="particles-js"></div>
+
+
+      <section class="hero" id="homeCover">
+         <div class="hero-transition">
+            <div class="hero-transition-img" id="homeTransition"></div>
+         </div>
+         <div class="hero__inner">
+            <img class="logo" src="img/so-logo-hero.svg" alt="hero image">
+            <h1 class="hero__title">Welcome</h1>
+            <a class="anchor__button" id="anchor" href="#about"><span class="fas fa-angle-double-down"></span></a>
+         </div>
+      </section>
+
+
+
+      <section class="flex-column" id="about">
+         <div class="site__description">
+
+            <h4>
+               <span class="bold">Spatial Operations</span> is a showcase of creative pursuits by multi-disciplinary designer and front-end developer Daniel Snider.  His work spans the fields of web development, graphic design, animation, architecture, and urban design.  Spatial Operations as a name is derived from the unique design exercises that define "space" across various mediums.  My creative work gives meaning to an environment, a mission, an identity, a message and/or a product.
+            </h4>
+
+         </div>
+      </section>   
+
+
       
       <main class="content">
 
-         <article>
+         <div class="article__heading">
+            <h3>
+            Featured
+            </h3>
+         </div>
 
-            <section class="grid grid__intro">
-               <div class="grid__item" id="item__header">
 
-                  <ul class="header__contact">
-                     <li><a href="#"><i class="far fa-envelope"></i>manudan711@gmail.com</a></li>
-                     <li><a href="#"><i class="fas fa-phone"></i>678.243.8198</a></li>
-                  </ul>
+         <article class="grid__feature" id="article-one">
 
-                  <ul class="header__social">
-                     <li>
-                        <a href="https://www.facebook.com" data-tool-tip="Social accounts to come"><i class="fab fa-facebook-f"></i></a>
-                     </li>
-                     <li>
-                        <a href="https://www.instagram.com" data-tool-tip="Social accounts to come"><i class="fab fa-instagram"></i></a>
-                     </li>
-                     <li>
-                        <a href="https://www.twitter.com" data-tool-tip="Social accounts to come"><i class="fab fa-twitter"></i></a>
-                     </li>
-                     <li>
-                        <a href="https://www.linkedin.com" data-tool-tip="Social accounts to come"><i class="fab fa-linkedin"></i></a>
-                     </li>
-                     <li>
-                        <a href="https://www.dribbble.com" data-tool-tip="Social accounts to come"><i class="fab fa-dribbble"></i></a>
-                     </li>
-                     <li>
-                        <a href="https://www.behance.net" data-tool-tip="Social accounts to come"><i class="fab fa-behance"></i></a>
-                     </li>
-                     <li>
-                        <a href="https://www.github.com" data-tool-tip="Social accounts to come"><i class="fab fa-github"></i></a>
-                     </li>
-                  </ul>
 
-               </div>
-               <div class="grid__item" id="item__badge">
-                  <div class="badge__top">
-                     <h5><span class="bold">Greetings!</span>&nbsp;&nbsp;My name is</h5>
-                  </div>
-                  <div class="badge__name">
-                     <h1 class="badge__font">Daniel Snider</h1>
-                  </div>
-                  <div class="badge__bottom">
-                     <h6 style="font-size: 13px;">Multidisciplinary Designer and Web Developer</h6>
+<!--             <section class="feature__item">
+               <div class="feature__abstract">
+                  <img class="feature__img" src="img/abstract/graphic3.svg" alt="Donorgraphics image preview">
+                  <div class="laptop">
+                     <figure class="l_top">
+                        <div class="l_screen">
+                           <img class="feature__img scroll1" src="img/pillyr-homepage.jpg" alt="The Pillyr Foundation website image preview" width="100%">
+                        </div>
+                        <div class="l_camera">
+                        </div>
+                     </figure>
+                     <figure class="l_bottom">
+                        <hr class="l_divider"/>
+                        <div class="l_latch">
+                        </div>
+                     </figure>
                   </div>
                </div>
-               <div class="grid__item" id="item__img">
-                  <img class="image" src="img/illustration-me.jpg">
-               </div>
-               <div class="grid__item section-title" id="item__bio">
-                  <h4 class="text-center">
-                      Biography
-                  </h4>
-                  <p>
-                  Daniel Snider is a multi-disciplinary designer and front-end developer working at One &amp; All, an Omnicom agency that specializes in fundraising for nonprofit organizations. In his role as an Art Director, he is responsible for print, digital, and web assets that enhance the ability of its clients to raise charitable funds to support their respective missions.  He is also a specialist in infographic design.  Formerly educated in the field of architecture, Daniel secured his Bachelor of Science in Architecture at the University of Cincinnati, attended Georgia Institute of Technology for a masters in the same field before pivoting his career towards graphic design and web development.</p>
-
-                  <p>Daniel is an animal lover, community advocate, cyclist and a well-traveled individual with a love for cities and public spaces.</p>
+               <div class="feature__context">
+                  <h3 class="card__heading" alt="The Pillyr Foundation">The Pillyr Foundation</h3>
+                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i>&nbsp;&nbsp;<i class="fas fa-code" alt="design &amp; development"></i></p>
+                  <p class="card__description" alt="Project description: Branding, design, and web development for Atlanta nonprofit organization">Branding, design, and web development for this nonprofit organization focused on improving public space in the city of Atlanta.</p>
+                  <a class="card__button" href="https://www.pillyr.org" target="_blank" alt="The Pillyr Foundation — Learn more button">Learn More</a>
                </div>
             </section>
 
-            <section class="grid grid__skills">
 
-               <div class="section-title">
-                  <h4 class="text-center">
-                      My Skillset
-                  </h4>
+            <hr class="hr-feature"/> -->
+
+
+            <section class="feature__item">
+               <div class="feature__abstract">
+                  <img class="feature__img" src="img/abstract/graphic.svg" alt="abstract background">
+                  <figure class="tablet">
+                     <div class="t_cam">
+                     </div>
+                     <div class="t_screen">
+                        <img class="feature__img scrollA" src="img/pillyr-homepage.jpg" alt="The Pillyr Foundation website preview" width="100%">
+                     </div>
+                     <div class="t_button_home">
+                     </div>
+                  </figure>
                </div>
-
-               <div class="section-line">
-               </div>
-
-               <div class="grid__item item__skills" id="skills1">
-
-                  <ul class="skill__list">
-                     <li class="list__item">
-                        <p>&nbsp;</p>
-                        <div class="bar-none">
-                           <div class="bar-legend">
-                              <span>0</span>
-                              <span>1</span>
-                              <span>2</span>
-                              <span>3</span>
-                              <span>4</span>
-                              <span>5</span>
-                           </div>
-                        <div>
-                     </li>
-                     <li class="list__item">
-                        <p>Photoshop</p>
-                        <div class="bar">
-                           <div class="bar-5"></div>
-                        <div>
-                     </li>
-                     <li class="list__item">
-                        <p>Illustrator</p>
-                        <div class="bar">
-                           <div class="bar-5"></div>
-
-                        <div>
-                     </li>
-                     <li class="list__item">
-                        <p>InDesign</p>
-                        <div class="bar">
-                           <div class="bar-5"></div>
-                        <div>
-                     </li>
-                     <li class="list__item">
-                        <p>After Effects</p>
-                        <div class="bar">
-                           <div class="bar-4"></div>
-                        <div>
-                     </li>
-                     <li class="list__item">
-                        <p>Premiere Pro</p>
-                        <div class="bar">
-                           <div class="bar-3"></div>
-                        <div>
-                     </li>
-                     <li class="list__item">
-                        <p>Acrobat Pro</p>
-                        <div class="bar">
-                           <div class="bar-5"></div>
-                        <div>
-                     </li>
-                     <li class="list__item">
-                        <p>Sublime Text</p>
-                        <div class="bar">
-                           <div class="bar-4"></div>
-                        <div>
-                     </li>
-                     <li class="list__item">
-                        <p>Transmit</p>
-                        <div class="bar">
-                           <div class="bar-4"></div>
-                        <div>
-                     </li>
-                     <li class="list__item">
-                        <p>Github Desktop</p>
-                        <div class="bar">
-                           <div class="bar-3"></div>
-                        <div>
-                     </li>
-                     <li class="list__item">
-                        <p>Sketch</p>
-                        <div class="bar">
-                           <div class="bar-4"></div>
-                        <div>
-                     </li>
-                  </ul>
-               </div>
-
-               <div class="grid__item item__skills" id="skills2">
-                  <ul class="skill__list">
-                     <li class="list__item">
-                        <p>&nbsp;</p>
-                        <div class="bar-none">
-                           <div class="bar-legend">
-                              <span>0</span>
-                              <span>1</span>
-                              <span>2</span>
-                              <span>3</span>
-                              <span>4</span>
-                              <span>5</span>
-                           </div>
-                        <div>
-                     </li>
-                     <li class="list__item">
-                        <p>MS Word</p>
-                        <div class="bar">
-                           <div class="bar-4"></div>
-                        <div>
-                     </li>
-                     <li class="list__item">
-                        <p>MS Excel</p>
-                        <div class="bar">
-                           <div class="bar-4"></div>
-                        <div>
-                     </li>
-                     <li class="list__item">
-                        <p>MS Powerpoint</p>
-                        <div class="bar">
-                           <div class="bar-4"></div>
-                        <div>
-                     </li>         
-                     <li class="list__item">
-                        <p>AutoCAD</p>
-                        <div class="bar">
-                           <div class="bar-3"></div>
-                        <div>                        
-                     </li>
-                     <li class="list__item">
-                        <p>Revit</p>
-                        <div class="bar">
-                           <div class="bar-3"></div>
-                        <div>                        
-                     </li>
-                     <li class="list__item">
-                        <p>Sketchup</p>
-                        <div class="bar">
-                           <div class="bar-4"></div>
-                        <div>
-                     </li>
-                     <li class="list__item">
-                        <p>Rhinoceros</p>
-                        <div class="bar">
-                           <div class="bar-3"></div>
-                        <div>
-                     </li>
-                     <li class="list__item">
-                        <p>Visualizations</p>
-                        <div class="bar">
-                           <div class="bar-4"></div>
-                        <div>
-                     </li>
-                  </ul>
-               </div>
-
-               <div class="grid__item item__skills" id="skills3">
-                  <ul class="skill__list">
-                     <li class="list__item">
-                        <p>&nbsp;</p>
-                        <div class="bar-none">
-                           <div class="bar-legend">
-                              <span>0</span>
-                              <span>1</span>
-                              <span>2</span>
-                              <span>3</span>
-                              <span>4</span>
-                              <span>5</span>
-                           </div>
-                        <div>
-                     </li>
-                     <li class="list__item">
-                        <p>HTML5 / CSS3</p>
-                        <div class="bar">
-                           <div class="bar-4"></div>
-                        <div>
-                     </li>
-                     <li class="list__item">
-                        <p>LESS / SASS</p>
-                        <div class="bar">
-                           <div class="bar-3"></div>
-                        <div>
-                     </li>
-                     <li class="list__item">
-                        <p>Grid / Flexbox</p>
-                        <div class="bar">
-                           <div class="bar-4"></div>
-                        <div>
-                     </li>
-                     <li class="list__item">
-                        <p>Bootstrap</p>
-                        <div class="bar">
-                           <div class="bar-4"></div>
-                        <div>
-                     </li>
-                     <li class="list__item">
-                        <p>Javascript ES6</p>
-                        <div class="bar">
-                           <div class="bar-3"></div>
-                        <div>
-                     </li>
-                     <li class="list__item">
-                        <p>JQuery</p>
-                        <div class="bar">
-                           <div class="bar-3"></div>
-                        <div>
-                     </li>
-                     <li class="list__item">
-                        <p>ReactJS</p>
-                        <div class="bar">
-                           <div class="bar-1"></div>
-                        <div>
-                     </li>
-                     <li class="list__item">
-                        <p>ChartsJS</p>
-                        <div class="bar">
-                           <div class="bar-3"></div>
-                        <div>
-                     </li> 
-                     <li class="list__item">
-                        <p>Wordpress</p>
-                        <div class="bar">
-                           <div class="bar-3"></div>
-                        <div>
-                     </li>
-                     <li class="list__item">
-                        <p>Squarespace</p>
-                        <div class="bar">
-                           <div class="bar-3"></div>
-                        <div>
-                     </li>      
-                  </ul>
+               <div class="feature__context">
+                  <h3 class="card__heading" alt="The Pillyr Foundation">The Pillyr Foundation</h3>
+                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i>&nbsp;&nbsp;<i class="fas fa-code" alt="design &amp; development"></i></p>
+                  <p class="card__description" alt="Project description: Branding, design, and web development for Atlanta nonprofit organization">Branding, design, and web development for this nonprofit organization focused on improving public space in the city of Atlanta.</p>
+                  <a class="card__button" href="https://www.pillyr.org" target="_blank" alt="The Pillyr Foundation — Learn more button">Learn More</a>
                </div>
             </section>
 
-            <section class="grid grid__things">
 
-               <div class="section-title">
-                  <h4 class="text-center">
-                     Things I Do
-                  </h4>
+            <hr class="hr-feature"/>
+
+
+            <section class="feature__item flip">
+               <div class="feature__abstract">
+                  <img class="feature__img" src="img/abstract/graphic2.svg" alt="abstract background">
+                  <figure class="smartphone">
+                     <div class="s_cam_speaker">
+                     </div>
+                     <div class="s_screen">
+                        <img class="feature__img scrollB" src="img/2017-donorgraphics.jpg" alt="Donorgraphics image preview" width="100%">
+                     </div>
+                     <div class="s_button_home">
+                     </div>
+                  </figure>
                </div>
-
-               <div class="section-line">
-               </div>
-
-               <div class="grid__item item__things" id="things1">
-                  <ul class="things__icon">
-                     <img src="img/icon-brand.svg">
-                     <h5 class="item-title">Branding</h5>
-                  </ul>
-                  <ul class="things__list">
-                     <li class="list__item">
-                        <p>Logos</p>
-                     </li>
-                     <li class="list__item">
-                        <p>Business Cards</p>
-                     </li>
-                     <li class="list__item">
-                        <p>Letterheads</p>
-                     </li>
-                     <li class="list__item">
-                        <p>Brochures</p>
-                     </li>
-                     <li class="list__item">
-                        <p>Presentations</p>
-                     </li>
-                     <li class="list__item">
-                        <p>Sales Decks</p>
-                     </li>
-                     <li class="list__item">
-                        <p>Style Guides</p>
-                     </li>
-                  </ul>
-               </div>
-
-               <div class="grid__item item__things" id="things2">
-                  <ul class="things__icon">
-                     <img src="img/icon-print.svg">
-                     <h5 class="item-title">Print</h5>
-                  </ul>
-                  <ul class="things__list">
-                     <li class="list__item">
-                        <p>Books</p>
-                     </li>
-                     <li class="list__item">
-                        <p>Magazines</p>
-                     </li>
-                     <li class="list__item">
-                        <p>Portfolios</p>
-                     </li>
-                     <li class="list__item">
-                        <p>Posters</p>
-                     </li>
-                     <li class="list__item">
-                        <p>Album Covers</p>
-                     </li>
-                     <li class="list__item">
-                        <p>Merch Graphics</p>
-                     </li>
-                     <li class="list__item">
-                        <p>Menus &amp; Flyers</p>
-                     </li>
-                  </ul>
-               </div>
-
-               <div class="grid__item item__things" id="things3">
-                  <ul class="things__icon">
-                     <img src="img/icon-digital.svg">
-                     <h5 class="item-title">Digital</h5>
-                  </ul>
-                  <ul class="things__list">
-                     <li class="list__item">
-                        <p>Email Templates</p>
-                     </li>
-                     <li class="list__item">
-                        <p>Homepage Banners</p>
-                     </li>
-                     <li class="list__item">
-                        <p>Website Advertising</p>
-                     </li>
-                     <li class="list__item">
-                        <p>Social Media Ads</p>
-                     </li>
-                     <li class="list__item">
-                        <p>Lightboxes</p>
-                     </li>
-                     <li class="list__item">
-                        <p>Animated GIFs</p>
-                     </li>
-                     <li class="list__item">
-                        <p>AE Animations</p>
-                     </li>
-                  </ul>
-               </div>
-
-               <div class="grid__item item__things" id="things4">
-                  <ul class="things__icon">
-                     <img src="img/icon-web.svg">
-                     <h5 class="item-title">Web</h5>
-                  </ul>
-                  <ul class="things__list">
-                     <li class="list__item">
-                        <p>Web Design</p>
-                     </li>
-                     <li class="list__item">
-                        <p>UI / UX Design</p>
-                     </li>
-                     <li class="list__item">
-                        <p>Wordpress Dev</p>
-                     </li>
-                     <li class="list__item">
-                        <p>Squarespace Dev</p>
-                     </li>
-                     <li class="list__item">
-                        <p>React Development</p>
-                     </li>
-                     <li class="list__item">
-                        <p>Data Visualization</p>
-                     </li>
-                     <li class="list__item">
-                        <p>Placeholder</p>
-                     </li>
-                  </ul>
-               </div>
-            </section>
-            
-            <section class="grid grid__education">
-
-               <div class="section-title">
-                  <h4 class="text-center">
-                     Education
-                  </h4>
-               </div>
-
-               <div class="section-line">
-               </div>
-
-               <div class="grid__item item__education">
-
-                  <ul class="education__list">
-                     <li class="list__item time-top">
-                        <h5 class="item-title">Born</h5>
-                        <p class="text-center">United States of America</p>
-                     </li>
-                     <li class="list__item time-bottom">
-                        <p class="year text-center">1985</p>
-                     </li>
-                  </ul>
-                  <ul class="education__list">
-                     <li class="list__item time-top">
-                        <h5 class="item-title">High School</h5>
-                        <p class="text-center">Lakeshore Catholic HS</p>
-                     </li>
-                     <li class="list__item time-bottom">
-                        <p class="year text-center">HS Diploma 1999 - 2003</p>
-                     </li>
-                  </ul>
-                  <ul class="education__list">
-                     <li class="list__item time-top">
-                        <h5 class="item-title">Bachelor Degree</h5>
-                        <p class="text-center">University of Cincinnati</p>
-                     </li>
-                     <li class="list__item time-bottom">
-                        <p class="year text-center">BSArch 2005 - 2009</p>
-                     </li>
-                  </ul>
-                  <ul class="education__list">
-                     <li class="list__item time-top">
-                        <h5 class="item-title">MArch Candidate</h5>
-                        <p class="text-center">Georgia Tech</p>
-                     </li>
-                     <li class="list__item time-bottom">
-                        <p class="year text-center">2012 - 2014</p>
-                     </li>
-                  </ul>
+               <div class="feature__context">
+                  <h3 class="card__heading" alt="Donorgraphics">Donorgraphics</h3>
+                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i></p>
+                  <p class="card__description" alt="Project description: Using donor data collected by agency One &amp; All, these infographics were designed to communicate changes to annual donor behavior.">Using donor data collected by agency One &amp; All, these infographics were designed to communicate changes to annual donor behavior. A One &amp; All agency project.</p>
+                  <a class="card__button" href="http://www.donorgraphics.com" target="_blank" alt="Donorgraphics - Learn more button">Learn More</a>
                </div>
             </section>
 
-            <section class="grid grid__experience">
 
-               <div class="section-title">
-                  <h4 class="text-center">
-                     Experience
-                  </h4>
-               </div>
+            <hr class="hr-feature"/>
 
-               <div class="section-line">
-               </div>
 
-               <div class="chart-labels">
-                  <div class="list__item item__label">
-                     <span id="label1"></span>
-                     <p>Graphics</p>
-                  </div>
-                  <div class="list__item item__label">
-                     <span id="label2"></span>
-                     <p>Development</p>
-                  </div>
-                  <div class="list__item item__label">
-                     <span id="label3"></span>
-                     <p>Branding</p>
-                  </div>
-                  <div class="list__item item__label">
-                     <span id="label4"></span>
-                     <p>Architecture</p>
-                  </div>
+            <section class="feature__item">
+               <div class="feature__abstract">
+                  <img class="feature__img" src="img/abstract/graphic3.svg" alt="Donorgraphics image preview">
+                  <figure class="desktop">
+                     <hr class="d_divider"/>
+                     <div class="d_cam">
+                     </div>
+                     <div class="d_screen">
+                        <img class="feature__img scrollC" src="img/olivecrest-homepage.jpg" alt="Olivecrest website preview" width="100%">
+                     </div>
+                     <div class="d_button_home">
+                     </div>
+                     <svg class="d_stand" id="stand" data-name="stand" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160.8 74.99"><defs></defs><path class="d_stand_style" d="M566.09,817c72.91,0-.09,0,72.91,0,2.64,16.53,5.29,33.06,13.08,48.18,3.28,6.37,16.77,12.55,23.92,14.82-.94.94-3.26,1-5,1-39.49,0-98.51,0-138,0-1.74,0-4.08-.08-5-1,7.32-2.81,21.7-9.59,25.12-16.18,6.45-12.39,9.2-25.92,11.84-39.46C565.44,821.92,565.72,819.44,566.09,817Z" transform="translate(-522.03 -815.98)"/><path class="d_stand_style" d="M528.09,880.07c.91.93,3.45.91,5.19.91,39.49,0,98,0,137.47,0,1.74,0,4.24,0,5.18-.92,3.29.25,5.51,1.32,5.85,4s-1.64,4.12-4,4.92c-2.23.74-7.39,1-9.75,1-45.62,0-84.38,0-130,0a81.57,81.57,0,0,1-10.85-.92c-2.65-.55-4.19-1.92-4.12-4.73C523.1,881.28,524.7,881.13,528.09,880.07Z" transform="translate(-522.03 -815.98)"/></svg>
+                  </figure>
                </div>
-
-               <div class="section-subtitle">
-                  <p class="text-center italic">
-                     <span class="asterisk">***</span> 
-                     Percentage of projects that include the following expertise
-                     <span class="asterisk">***</span>
-                  </p>
+               <div class="feature__context">
+                  <h3 class="card__heading" alt="Olivecrest">Olivecrest</h3>
+                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i></p>
+                  <p class="card__description" alt="Project description: Olivecrest transforms the lives of at-risk children through the healing power of family.  Efforts focused on website design that covered the needs of each organization chapter.">Olivecrest helps at-risk children that lack a safe home.  Efforts focused on website design that covered the needs of each organization chapter. A One &amp; All agency project.</p>
+                  <a class="card__button" href="https://www.olivecrest.org" target="_blank" alt="Olivecrest website - Learn more button">Learn More</a>
                </div>
-
-               <div class="grid__item item__experience">
-                  <canvas id="myChart" width="100" height="100"></canvas>
-                  <ul class="experience__list">
-                     <li class="list__item">
-                        <p class="text-center">Atlanta, GA</p>
-                     </li>
-                     <li class="list__item">
-                        <p class="year text-center">2015 - Current</p>
-                     </li>
-                  </ul>
-               </div>
-               <div class="grid__item item__experience">
-                  <canvas id="myChart2" width="100" height="100"></canvas>
-                  <ul class="experience__list">
-                     <li class="list__item">
-                        <p class="text-center">Atlanta, GA</p>
-                     </li>
-                     <li class="list__item">
-                        <p class="year text-center">2017 - Current</p>
-                     </li>
-                  </ul>
-               </div>
-               <div class="grid__item item__experience">
-                  <canvas id="myChart3" width="100" height="100"></canvas>
-                  <ul class="experience__list">
-                     <li class="list__item">
-                        <p class="text-center">Austin, TX &amp; Atlanta, GA</p>
-                     </li>
-                     <li class="list__item">
-                        <p class="year text-center">2009 - Current</p>
-                     </li>
-                  </ul>
-               </div>
-               <div class="grid__item item__experience">
-                  <canvas id="myChart4" width="100" height="100"></canvas>
-                  <ul class="experience__list">
-                     <li class="list__item">
-                        <p class="text-center">Barcelona, Spain</p>
-                     </li>
-                     <li class="list__item">
-                        <p class="year text-center">2008</p>
-                     </li>
-                  </ul>
-               </div>
-               <!-- <div class="grid__item item__experience">
-                  <canvas id="myBarChart100" width="100" height="12.5"></canvas>
-               </div> -->
             </section>
+
 
          </article>
 
+      </main>
 
-      </main>  
 
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-      <script type="text/javascript" src="script.js"></script>
-      <script type="text/javascript" src="charts.js"></script>
+
+      <section class="flex-column" id="clients">
+         <div class="site__description">
+
+            <h4>
+               <span class="bold">Who I have worked with? </span> Here are some clients and employers.
+            </h4>
+
+         </div>
+
+         <div class="grid__logo">
+            <img class="logo__img square" src="img/logos/tsa.svg" alt="The Salvation Army">
+            <img class="logo__img wide" src="img/logos/oa.svg" alt="One & All Agency">
+            <img class="logo__img wide" src="img/logos/prm.svg" alt="Phoenix Rescue Mission">
+            <img class="logo__img square" src="img/logos/ahs.svg" alt="Atlanta Humane Society">
+            <img class="logo__img wide" src="img/logos/am.png" alt="Atlanta Mission">
+            <img class="logo__img square" src="img/logos/hssv.svg" alt="Humane Society Silicon Valley">
+            <img class="logo__img square" src="img/logos/fh.svg" alt="Fred Hutch">
+            <img class="logo__img wide" src="img/logos/tpf.svg" alt="The Pillyr Foundation">
+            <img class="logo__img wide" src="img/logos/brn.svg" alt="Beltline Rail Now">
+            <img class="logo__img wide" src="img/logos/oc.svg" alt="Olivecrest">
+            <img class="logo__img square" src="img/logos/tw.svg" alt="Terminal West at King Plow">
+            <img class="logo__img square" src="img/logos/chpf.svg" alt="Children's Hospital of Pittsburgh Foundation">
+         </div>
+      </section>  
+
+
+
+      <main class="content">      
+
+         <div class="article__heading">
+            <h3>
+            More Projects
+            </h3>
+         </div>
+
+
+         <article class="grid__showcase" id="article-two">
+
+            <section class="showcase__item card__container">
+               <img class="card__img img-right" src="img/more-projects/allenenorth.jpg" alt="#">
+               <div class="card__overlay">
+                  <h3 class="card__heading" alt="Beltline Rail Now">Beltline Rail Now</h3>
+                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i></p>
+                  <p class="card__description" alt="Project description:">This Atlanta-based transit advocacy group aims to shape the narrative of investment priorities towards a generational project that could impact millions and ease regional traffic congestion.</p>
+                  <a class="card__button" href="#" target="_blank" alt="#">Learn More</a>
+               </div>
+            </section>
+
+            <section class="showcase__item card__container">
+               <img class="card__img img-center" src="img/more-projects/taxlaw.jpg" alt=#">
+               <div class="card__overlay">
+                  <h3 class="card__heading" alt="One and all tax infographic">One &amp; All Tax Infographic</h3>
+                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i></p>
+                  <p class="card__description" alt="Project description:">This project was created to inform One &amp; All clients how to understand new tax law changes that were passed by Congress to take effect the following year.</p>
+                  <a class="card__button" href="#" target="_blank" alt="#">Learn More</a>
+               </div>
+            </section>
+
+<!--             <section class="showcase__item card__container">
+               <img class="card__img img-center" src="https://picsum.photos/1400/1052" alt="#">
+               <div class="card__overlay">
+                  <h3 class="card__heading" alt="One and all">One &amp; All</h3>
+                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i>&nbsp;&nbsp;<i class="fas fa-code" alt="design &amp; development"></i></p>
+                  <p class="card__description" alt="Project description:">Following the merger of Grizzard and Russ Reid, One &amp; All became the resulting company leading in fundraising services for nonprofits.  I was tasked with designing company assets using the new brand identity.</p>
+                  <a class="card__button" href="#" target="_blank" alt="#">Learn More</a>
+               </div>
+            </section> -->
+            
+            <section class="showcase__item card__container">
+               <img class="card__img img-center" src="img/more-projects/grizzard-cover.jpg" alt="placeholder image from unsplash">
+               <div class="card__overlay">
+                  <h3 class="card__heading" alt="Grizzard Communication Group">Grizzard</h3>
+                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i>&nbsp;&nbsp;<i class="fas fa-code" alt="design &amp; development"></i></p>
+                  <p class="card__description" alt="Project description: Grizzard Communications Group was a fundraising agency under the Omnicom umbrella. In 2016, the agency was in need of a rebrand of its visual identity system and I was tasked with that responsibility.">Grizzard Communications Group was a fundraising agency under the Omnicom umbrella. In 2016, the agency was in need of a rebrand of its visual identity system and I was tasked with that responsibility.</p>
+                  <a class="card__button" href="#" target="_blank" alt="#">Learn More</a>
+               </div>
+            </section>
+            
+            <section class="showcase__item card__container">
+               <img class="card__img img-center" src="img/more-projects/jorg-karg-524156.jpg" alt="#">
+               <div class="card__overlay">
+                  <h3 class="card__heading" alt="The salvation army">The Salvation Army</h3>
+                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i>&nbsp;&nbsp;<i class="fas fa-code" alt="design &amp; development"></i></p>
+                  <p class="card__description" alt="Project description: Various assets from digital to print designed for various commands in The Salvation Army. Work created during my time at One &amp; All / Grizzard">Various assets from digital to print designed for various commands in The Salvation Army. Created during my time at One &amp; All / Grizzard.</p>
+                  <a class="card__button" href="#" target="_blank" alt="#">Learn More</a>
+               </div>
+            </section>
+
+            <section class="showcase__item card__container">
+               <img class="card__img img-center" src="https://picsum.photos/1400/1055" alt="#">
+               <div class="card__overlay">
+                  <h3 class="card__heading" alt="Phoenix rescue mission">Phoenix Rescue Mission</h3>
+                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i>&nbsp;&nbsp;<i class="fas fa-code" alt="design &amp; development"></i></p>
+                  <p class="card__description" alt="Project description: A handful of assets from digital to print media designed for Phoenix Rescue Mission. This work was created during my time at One &amp; All / Grizzard.">A handful of assets from digital to print media designed for Phoenix Rescue Mission. Created during my time at One &amp; All / Grizzard.</p>
+                  <a class="card__button" href="#" target="_blank" alt="#">Learn More</a>
+               </div>
+            </section>
+
+            <section class="showcase__item card__container">
+               <img class="card__img img-center" src="https://picsum.photos/1400/1056" alt="#">
+               <div class="card__overlay">
+                  <h3 class="card__heading" alt="Animal care clients">Animal Care Clients</h3>
+                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i>&nbsp;&nbsp;<i class="fas fa-code" alt="design &amp; development"></i></p>
+                  <p class="card__description" alt="Project description: Showcasing designed assets for various animal care clients of One &amp; All, including San Diego Humane Society, Humane Society Silicon Valley, and more!">Showcasing designed assets for various animal care clients of One &amp; All, including San Diego Humane Society, Humane Society Silicon Valley, and more!</p>
+                  <a class="card__button" href="#" target="_blank" alt="#">Learn More</a>
+               </div>
+             </section>
+            
+            <section class="showcase__item card__container">
+               <img class="card__img img-center" src="https://picsum.photos/1400/1057" alt="#">
+               <div class="card__overlay">
+                  <h3 class="card__heading" alt="Other Rescue Missions">Other Rescue Missions</h3>
+                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i>&nbsp;&nbsp;<i class="fas fa-code" alt="design &amp; development"></i></p>
+                  <p class="card__description" alt="Homelessness and hunger continue to be global issues.  Here in the United States, Rescue Missions provide charitable good by tackling these human needs within our cities. This work was created during my time at One &amp; All / Grizzard.">Homelessness and hunger continue to be global issues.  Rescue Missions provide charitable good by tackling these challenges within our cities. Created at One &amp; All / Grizzard.</p>
+                  <a class="card__button" href="#" target="_blank" alt="#">Learn More</a>
+               </div>
+            </section>
+            
+            <section class="showcase__item card__container">
+               <img class="card__img img-center" src="https://picsum.photos/1400/1058" alt="#">
+               <div class="card__overlay">
+                  <h3 class="card__heading" alt="Cue La Musique Zine">Cue La Musique Zine</h3>
+                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i>&nbsp;&nbsp;<i class="fas fa-code" alt="design &amp; development"></i></p>
+                  <p class="card__description" alt="Cue La Musique was a digital music magazine based in Atlanta GA from 2014 to 2015.  Three issues were released with design and editorial direction led by yours truly.">Cue La Musique was a digital music magazine based in Atlanta GA from 2014 to 2015.  Three magazine issues and the publication website were released with design and editorial direction led by yours truly.</p>
+                  <a class="card__button" href="https://issuu.com/cuelamusique" target="_blank" alt="#">Learn More</a>
+               </div>
+            </section>
+         </article>
+
+
+         <article class="flex-column" id="article-three">
+            <section class="social__cta">
+
+               <h4>
+                  Follow our design and development work across social media!
+               </h4>
+
+            </section>
+         </article>
+
+      </main>
+
+
+      
+      <footer id="footer">
+
+         <div class="footer__section-top">
+            <ul class="footer__sig">
+               <li><span>2018 <i class="far fa-copyright"></i> Spatial Operations</span>
+            </ul> 
+            <ul class="footer__social">
+               <li><a href="#"><i class="far fa-envelope"></i></a></li>             
+               <li><a href="https://www.facebook.com" data-tool-tip="Social accounts to come"><i class="fab fa-facebook-f"></i></a></li>
+               <li><a href="https://www.instagram.com" data-tool-tip="Social accounts to come"><i class="fab fa-instagram"></i></a></li>
+               <li><a href="https://www.twitter.com" data-tool-tip="Social accounts to come"><i class="fab fa-twitter"></i></a></li>
+               <li><a href="https://www.linkedin.com" data-tool-tip="Social accounts to come"><i class="fab fa-linkedin"></i></a></li>
+               <li><a href="https://www.dribbble.com" data-tool-tip="Social accounts to come"><i class="fab fa-dribbble"></i></a></li>
+               <li><a href="https://www.behance.net" data-tool-tip="Social accounts to come"><i class="fab fa-behance"></i></a></li>
+               <li><a href="https://www.github.com" data-tool-tip="Social accounts to come"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <ul class="footer__love">
+               <li>Made with <i class="fas fa-heart"></i> in Atlanta</li>
+            </ul>           
+         </div>
+
+         <div class="footer__section-bottom">
+            <ul class="footer__tools">
+<!--                <li class="weather__location">
+                  <a href="#" id="loc-atlanta" data-tool-tip="Data to come from API">Atlanta</a>
+                  <div>
+                     <p><i class="far fa-sun"></i></p>
+                     <p>&nbsp;87&#176;</p>
+                  </div>
+               </li>
+               <li class="weather__location">
+                  <a href="#" id="loc-austin" data-tool-tip="Data to come from API">Austin</a>
+                  <div>
+                     <p><i class="far fa-sun"></i></p>
+                     <p>&nbsp;95&#176;</p>
+                  </div>
+               </li>
+               <li class="weather__location">
+                  <a href="#" id="loc-boston" data-tool-tip="Data to come from API">Boston</a>
+                  <div>
+                     <p><i class="far fa-sun"></i></p>
+                     <p>&nbsp;82&#176;</p>
+                  </div>
+               </li>
+               <li class="weather__location">
+                  <a href="#" id="loc-toronto" data-tool-tip="Data to come from API">Toronto</a>
+                  <div>
+                     <p><i class="far fa-sun"></i></p>
+                     <p>&nbsp;81&#176;</p>
+                  </div>
+               </li>
+               <li class="weather__location">
+                  <a href="#" id="loc-barcelona" data-tool-tip="Data to come from API">Barcelona</a>
+                  <div>
+                     <p><i class="far fa-sun"></i></p>
+                     <p>&nbsp;86&#176;</p>
+                  </div>
+               </li>
+               <li class="weather__location">
+                  <a href="#" id="loc-cincinnati" data-tool-tip="Data to come from API">Cincinnati</a>
+                  <div>
+                     <p><i class="far fa-sun"></i></p>
+                     <p>&nbsp;83&#176;</p>
+                  </div>
+               </li> -->
+            </ul>
+         </div>         
+      </footer>         
+
+
+      <script src="js/script.js"></script>
+      <script src="js/particles.js"></script>
+      <script src="js/app.js"></script>
 
    </body>
 
 </html>
-
-
-<!--
-.grid__item #item-header
-            #item-badge
-            #item-img
-            #item-bio
-
-.grid__item .item-skill #skill1
-            .item-skill #skill2
-            .item-skill #skill3
-
-.grid__item .item-things #things1
-            .item-things #things2
-            .item-things #things3
-            .item-things #things4
-
-.grid__item .item-education
-
-.grid__item .item-experience #experience1
-            .item-experience #experience2
-            .item-experience #experience3
-            .item-experience #experience4
-
-
-
--->

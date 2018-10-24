@@ -1,0 +1,62 @@
+body{
+	background-color: #f7f7f7;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+  text-align: center;
+}
+
+h1, h2, h3{
+text-align: center;
+}
+
+.row{
+  margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+/*.responsive{
+	background-image: url('images/toms-restaurant.jpg');
+	height:400px;
+	overflow: hidden;
+}*/
+
+#reservation-form {
+    margin: 0 auto;
+    width: 80%;
+    padding: 15px 0; 
+}
+
+#reservation-form label {
+    width: 15%;
+    margin-right: 8px;
+}
+
+#reservation-form input {
+    padding: 5px;
+    width: 75%;
+}
+
+#reservation-form input[type="submit"] {
+    width: 100%;
+}
+
+/*.source-image {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}*/
+	
+
+.quote p {
+	font-size: 40px;
+	line-height: 45px;
+	padding: 30px 50px;
+}
+
+.quote span{
+	font-size: 12px;
+
+}
