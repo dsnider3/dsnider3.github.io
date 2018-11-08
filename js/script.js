@@ -9,6 +9,7 @@ root.style.setProperty('--yellow', 'orange');
 
 
 
+/* ------------ Nav Menu Visibility Behavior ------------ */
 
 
 // window.onscroll = function() {myFunction()};
@@ -26,22 +27,27 @@ root.style.setProperty('--yellow', 'orange');
 
 
 // var prevScrollpos = window.pageYOffset;
-
 // window.onscroll = function() {
 // var currentScrollPos = window.pageYOffset;
 //   if (prevScrollpos > currentScrollPos) {
 //     document.getElementById("header").style.top = "0";
 //   } else {
-//     document.getElementById("header").style.top = "-80px";
+//     document.getElementById("header").style.top = "-250px";
 //   }
 //   prevScrollpos = currentScrollPos;
 // }
 
-  // Look for .hamburger
-  var hamburger = document.querySelector(".hamburger");
-  // On click
-  hamburger.addEventListener("click", function() {
-    // Toggle class "is-active"
-    hamburger.classList.toggle("is-active");
-    // Do something else, like open/close menu
-  });
+
+/* ------------ Hamburger Animation ------------ */
+
+// Look for .hamburger
+var hamburger = document.querySelector(".hamburger");
+// On click
+hamburger.addEventListener("click", function() {
+// Toggle class "is-active"
+hamburger.classList.toggle("is-active");
+// Do something else, like open/close menu
+});
+
+
+

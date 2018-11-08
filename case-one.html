@@ -4,11 +4,16 @@
 
    <head>
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+      <meta name="description" content="Spatial Operations - Pillyr Case Study">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Spatial Operations Case Study / Pillyr</title>
-      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:200,200i,400,400i,700,700i" rel="stylesheet">      
+
+      <title>Pillyr Case Study / Spatial Operations</title>
+
+      <link rel="icon" type="image/png" href="#">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,600,600i,700,700i|IBM+Plex+Serif:200,200i,400,400i,700,700i|Gloria+Hallelujah">             
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <link rel="stylesheet" type="text/css" href="css/devices.css">
    </head>
@@ -23,69 +28,90 @@
 
       <header id="header">
 
+         <a class="logo-link" href="index.html"><img class="nav-logo" src="img/so-logo-icon.svg" alt="Spatial operations logo"/></a>
          <input type="checkbox" class="nav-toggle" id="nav-toggle">
-         <label for="nav-toggle" class="nav-toggle-label">
-            <span class="nav-hamburger"><i class="fas fa-bars"></i></span>         
-         </label>
+         <label class="hamburger hamburger--spin nav-toggle-label" for="nav-toggle" aria-label="Menu" aria-controls="navigation" aria-expanded="true/false">
+            <span class="hamburger-box">
+               <span class="hamburger-inner"></span>
+            </span>
+         </label>    
+
 
          <nav id="navbar">
 
-            <img class="nav-logo" src="img/so-logo-icon.svg" alt="hero image">
-
             <ul class="nav__container">
-               <li class="nav-link" tabindex="2"><span class="link-number">01</span><a href="#">About</a></li>
-               <li class="nav-link" tabindex="3"><span class="link-number">02</span><a href="#">Services</a></li>
-               <li class="nav-link" tabindex="4"><span class="link-number">03</span><a href="#">Work</a></li>
-               <li class="nav-link" tabindex="5"><span class="link-number">04</span><a href="#">Resume / CV</a></li>
+               <li class="list-item"><a href="resume.html" class="nav-link" data="01">Resume / CV</a></li>
+               <li class="list-item"><a href="services.html" class="nav-link" data="02">Services</a></li>
+               <li class="list-item" data-tool-tip="Social accounts to come" data-position="top"><a class="nav-link" data="03">Work</a></li>
+               <li class="list-item"><a href="resources.html" class="nav-link" data="04">Resources</a></li>
             </ul>
 
             <hr class="hr-menu"/>
 
-            <a class="button" href="mailto:manudan711@gmail.com" alt="Contact Now button">Contact Now</a>
+            <h6>For new projects, collaboration inquiries, or if you just want to say hello, reach out to me below.</h6>
+
+            <a class="button" href="mailto:manudan711@gmail.com" aria-label="Contact now button via email">Contact Now</a>
 
             <ul class="nav__social">
-               <li><a href="#"><i class="far fa-envelope"></i></a></li>             
-               <li><a href="https://www.facebook.com" data-tool-tip="Social accounts to come"><i class="fab fa-facebook-f"></i></a></li>
-               <li><a href="https://www.instagram.com" data-tool-tip="Social accounts to come"><i class="fab fa-instagram"></i></a></li>
-               <li><a href="https://www.twitter.com" data-tool-tip="Social accounts to come"><i class="fab fa-twitter"></i></a></li>
-               <li><a href="https://www.linkedin.com" data-tool-tip="Social accounts to come"><i class="fab fa-linkedin"></i></a></li>
-               <li><a href="https://www.dribbble.com" data-tool-tip="Social accounts to come"><i class="fab fa-dribbble"></i></a></li>
-               <li><a href="https://www.behance.net" data-tool-tip="Social accounts to come"><i class="fab fa-behance"></i></a></li>
-               <li><a href="https://www.github.com" data-tool-tip="Social accounts to come"><i class="fab fa-github"></i></a></li>
+               <li>
+                  <a href="mailto:daniel@spatialoperations.com" aria-label="Send email"><i class="far fa-envelope"></i></a>
+               </li>             
+               <li>
+                  <a href="https://www.facebook.com/spatialoperations" aria-label="Link to facebook page"><i class="fab fa-facebook-f"></i></a>
+               </li>
+               <li>
+                  <a href="https://www.instagram.com/spatialoperations" aria-label="Link to instagram page"><i class="fab fa-instagram"></i></a>
+               </li>
+               <!--<li>
+                  <a href="https://www.twitter.com" data-tool-tip="Social accounts to come" data-position="top"><i class="fab fa-twitter"></i></a>
+               </li>-->
+               <li>
+                  <a href="https://www.dribbble.com" aria-label="Link to dribble page" data-tool-tip="Social accounts to come" data-position="top"><i class="fab fa-dribbble"></i></a>
+               </li>
+               <li>
+                  <a href="https://www.behance.net" aria-label="Link to behance page" data-tool-tip="Social accounts to come" data-position="top"><i class="fab fa-behance"></i></a>
+               </li>
+               <li>
+                  <a href="https://www.github.com" aria-label="Link to github page" data-tool-tip="Social accounts to come" data-position="top"><i class="fab fa-github"></i></a>
+               </li>
+               <li>
+                  <a href="https://www.linkedin.com/in/sniderde/" aria-label="Link to LinkedIn page"><i class="fab fa-linkedin"></i></a>
+               </li>
             </ul>
 
          </nav>
+
       </header>
 
   
 
-      <section class="hero" id="caseCover1">
-         <div class="hero-transition">
+      <section class="hero" id="caseCover1" aria-label="Abstract vector artwork background for the pillyr foundation case study">
+<!--          <div class="hero-transition">
             <div class="hero-transition-img" id="caseTransition1"></div>
-            <figure class="browser">
-               <div class="b_screen">
-                  <img class="feature__img scrollA" src="img/pillyr-homepage.jpg" alt="The Pillyr Foundation website preview" width="100%">
-               </div>
-               <div class="b_button_one">
-               </div>
-               <div class="b_button_two">
-               </div>
-               <div class="b_button_three">
-               </div>
-            </figure>
-         </div>
-         <div class="hero__cases-inner">
-            <div class="hero__cases-left">
+         </div> -->
+         <div class="hero__cases-container container__mockup">
+            <div class="hero__cases-headings headings__left">
                <h1 class="hero__cases-title">The Pillyr Foundation</h1>
                <h3 class="hero__cases-subtitle">Brand Identity & Website</h3>
             </div>
-            <div class="hero__cases-right">
+            <div class="hero__cases-mockup">
+               <figure class="browser">
+                  <div class="b_screen">
+                     <img class="feature__img scrollA" src="img/pillyr-homepage.jpg" alt="The Pillyr Foundation website preview" width="100%"/>
+                  </div>
+                  <div class="b_button_one">
+                  </div>
+                  <div class="b_button_two">
+                  </div>
+                  <div class="b_button_three">
+                  </div>
+               </figure>
             </div>
          </div>
       </section>
 
 
-      <section class="flex-column" id="about">
+      <section class="flex__container flex__mockup" id="intro">
          <div class="site__description">
 
             <h4>
@@ -105,15 +131,19 @@
 
             <section class="cases__item">
 
-               <div class="cases__context">
-                  <h3 class="cases__heading" alt="Services">Services</h3>
-                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i>&nbsp;&nbsp;&nbsp;&nbsp;Graphic Design</p>
-                  <p class="card__icons"><i class="fas fa-code" alt="design &amp; development"></i>&nbsp;&nbsp;&nbsp;Web Design & Development</p>
-                  <p class="cases__description" alt="#"><!-- Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. --></p>
+               <div class="cases__context-left">
+                  <h3 class="cases__heading">Services</h3>
+                  <p class="card__icons"><i class="far fa-newspaper" aria-label="visual design icon"></i>&nbsp;&nbsp;&nbsp;&nbsp;Visual Design</p>
+                  <p class="card__icons"><i class="fas fa-code" aria-label="web development icon"></i>&nbsp;&nbsp;&nbsp;Web Development</p>
+                  <p class="card__icons"><i class="fas fa-stamp" aria-label="branding icon"></i>&nbsp;&nbsp;&nbsp;&nbsp;Branding</p>
+                  <p class="card__icons"><i class="fas fa-rocket" aria-label="animation icon"></i>&nbsp;&nbsp;&nbsp;&nbsp;Animation</p>
+                  <p class="card__icons"><i class="fas fa-map" aria-label="print icon"></i>&nbsp;&nbsp;&nbsp;Print Design</p>
+                  <p class="card__icons"><i class="fas fa-chart-bar" aria-label="infographic icon"></i>&nbsp;&nbsp;&nbsp;&nbsp;Data Visualization</p>
+                  <p class="cases__description"></p>
                </div>
 
-               <div class="cases__context">
-                  <h3 class="cases__heading" alt="Design & Dev Tools">Design & Dev Tools</h3>
+               <div class="cases__context-left">
+                  <h3 class="cases__heading">Design & Dev Tools</h3>
                   <div class="cases__tools">
                      <div class="cases__tools-tag">Illustrator</div>
                      <div class="cases__tools-tag">Photoshop</div>
@@ -128,12 +158,12 @@
                      <div class="cases__tools-tag">PHP</div>
                      <div class="cases__tools-tag">Wordpress</div>
                   </div>
-                  <p class="cases__description" alt="#"></p>
+                  <p class="cases__description"></p>
                </div>
 
-               <div class="cases__context">
-                  <h3 class="cases__heading" alt="Overview">Scope</h3>
-                  <p class="cases__description" alt="#">To get this fledgling organization started on the right foot, a brand identity is needed. The brand scope included:</p>
+               <div class="cases__context-left">
+                  <h3 class="cases__heading">Scope</h3>
+                  <p class="cases__description">To get this fledgling organization started on the right foot, a brand identity is needed. The brand scope included:</p>
                   <ul class="cases__scope-initial">
                      <li class="cases__scope-item">Logo / icon (multiple format options)</li>
                      <li class="cases__scope-item">Typeface pairing</li>
@@ -153,91 +183,69 @@
                         <li class="cases__scope-item">Bootstrap & JQuery</li>
                      </ul>
                   </ul>
-                  <p class="cases__description" alt="#"></p>
+                  <p class="cases__description"></p>
                </div>
 
-               <div class="cases__context">
-                  <h3 class="cases__heading" alt="Overview">Solution</h3>
-                  <p class="cases__description" alt="#">To understand how the organization should present itself to its supporters, donors, and beneficiaries, surveys were created to better understand each user segment as well as the preferences of each organization board member.  Once the results were collected, it was clear that a brand identity with a modern look, vibrant colors, and flexibility to work across different mediums were valued.  The design process led to the following decisions:</p>
+               <div class="cases__context-left">
+                  <h3 class="cases__heading">Solution</h3>
+                  <p class="cases__description">To understand how the organization should present itself to its supporters, donors, and beneficiaries, surveys were created to better understand each user segment as well as the preferences of each organization board member.  Once the results were collected, it was clear that a brand identity with a modern look, vibrant colors, and flexibility to work across different mediums were valued.  The design process led to the following decisions:</p>
                   <ul class="cases__scope-initial">
                      <li class="cases__scope-item">Logo would include an icon merging the form of the letter p and an abstract column</li>
                      <li class="cases__scope-item">Typefaces chosen included Muli for body copy and Catamaran for titling</li>
                      <li class="cases__scope-item">Color palette would include 3 main brand colors complimented by various shades of grey</li>
                   </ul>
-                  <p class="cases__description" alt="#"></p>
+                  <p class="cases__description"></p>
                </div>
 
-               <div class="cases__context">
-                  <h3 class="cases__heading" alt="Overview">Result</h3>
-                  <p class="cases__description" alt="#">Once the brand assets were created, the website was designed and developed within two months.</p>
+               <div class="cases__context-left">
+                  <h3 class="cases__heading">Result</h3>
+                  <p class="cases__description">Once the brand assets were created, the website was designed and developed within two months.</p>
                </div>
 
-<!--                <img class="cases__img img-right" src="img/more-projects/allenenorth.jpg" alt="#">
- -->
             </section>
 
          </article>
 
 
 
-         <div class="cases__mockup">
+         <article class="grid__gallery" id="article-two">
 
-            <figure class="tablet">
-               <div class="t_cam">
-               </div>
-               <div class="t_screen">
-                  <img class="feature__img scrollA" src="img/pillyr-homepage.jpg" alt="The Pillyr Foundation website preview" width="100%">
-               </div>
-               <div class="t_button_home">
-               </div>
-            </figure>
-
-            <figure class="smartphone">
-               <div class="s_cam_speaker">
-               </div>
-               <div class="s_screen">
-                  <img class="feature__img scrollB" src="img/cases/pillyr/pillyr-homepage-mobile.jpg" alt="Donorgraphics image preview" width="100%">
-               </div>
-               <div class="s_button_home">
-               </div>
-            </figure>
-
-         </div>   
-
-
-
-         <article class="grid__image">
             <div class="image__item image__item-medium pillyr">
-<!--                <div class="item__details">
-                 2 Lorem ipsum some description for this gallery item.
-               </div> -->
             </div>
+
             <div class="image__item image__item-full-y pillyr">
-<!--                <div class="item__details">
-                 3 Lorem ipsum some description for this gallery item.
-               </div> -->
             </div>
+
             <div class="image__item image__item-large pillyr">
-<!--                <div class="item__details">
-                 4 Lorem ipsum some description for this gallery item.
-               </div> -->
             </div>
+
             <div class="image__item pillyr">
-<!--                <div class="item__details">
-                 5 Lorem ipsum some description for this gallery item.
-               </div> -->
             </div>
+
             <div class="image__item image__item-full-x pillyr">
-<!--                <div class="item__details">
-                6 Lorem ipsum some description for this gallery item.
-               </div> -->
             </div>
+
             <div class="image__item image__item-full pillyr">
-<!--                <div class="item__details">
-                 8 Lorem ipsum some description for this gallery item.
-               </div> -->
             </div>
+
          </article>
+
+
+         <div class="grid__skip">
+
+            <a class="skip__item skip__prev" href="case-three.html" aria-label="Link to olivecrest case study page">
+               <div class="skip__overlay">
+                  <h3 class="skip__heading"><i class="fas fa-angle-double-left"></i>Prev Case Study</h3>
+               </div>
+            </a>
+
+            <a class="skip__item skip__next" href="case-two.html" aria-label="Link to donorgraphics case study page">            
+               <div class="skip__overlay">
+                  <h3 class="skip__heading">Next Case Study<i class="fas fa-angle-double-right"></i></h3>
+               </div>
+            </a>
+
+         </div>
    
 
          <div class="article__heading">
@@ -247,25 +255,25 @@
          </div>
 
 
-         <article class="grid__showcase" id="article-two">
+         <article class="grid__showcase" id="article-three">
 
             <section class="showcase__item card__container">
-               <img class="card__img img-right" src="img/more-projects/allenenorth.jpg" alt="#">
+               <img class="card__img img-right" src="img/more-projects/allenenorth.jpg" alt="Beltline Rail Now promo image"/>
                <div class="card__overlay">
-                  <h3 class="card__heading" alt="Beltline Rail Now">Beltline Rail Now</h3>
-                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i></p>
-                  <p class="card__description" alt="Project description:">This Atlanta-based transit advocacy group aims to shape the narrative of investment priorities towards a generational project that could impact millions and ease regional traffic congestion.</p>
-                  <a class="card__button" href="#" target="_blank" alt="#">Learn More</a>
+                  <h3 class="card__heading">Beltline Rail Now</h3>
+                  <p class="card__icons"><i class="fas fa-pencil-alt" aria-label="graphic design icon"></i></p>
+                  <p class="card__description">This Atlanta-based transit advocacy group aims to shape the narrative of investment priorities towards a generational project that could impact millions and ease regional traffic congestion.</p>
+                  <a class="card__button" href="#" target="_blank" aria-label="Beltline Rail Now - Learn more button">Learn More</a>
                </div>
             </section>
 
             <section class="showcase__item card__container">
-               <img class="card__img img-center" src="img/more-projects/taxlaw.jpg" alt=#">
+               <img class="card__img img-center" src="img/more-projects/taxlaw.jpg" alt="Tax law vector image showing calculator and tax prep items"/>
                <div class="card__overlay">
-                  <h3 class="card__heading" alt="One and all tax infographic">One &amp; All Tax Infographic</h3>
-                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i></p>
-                  <p class="card__description" alt="Project description:">This project was created to inform One &amp; All clients how to understand new tax law changes that were passed by Congress to take effect the following year.</p>
-                  <a class="card__button" href="#" target="_blank" alt="#">Learn More</a>
+                  <h3 class="card__heading">One &amp; All Tax Infographic</h3>
+                  <p class="card__icons"><i class="fas fa-pencil-alt" aria-label="graphic design icon"></i></p>
+                  <p class="card__description">This project was created to inform One &amp; All clients how to understand new tax law changes that were passed by Congress to take effect the following year.</p>
+                  <a class="card__button" href="#" target="_blank" aria-label="One &amp; all tax infographic - Learn more button">Learn More</a>
                </div>
             </section>
 
@@ -274,11 +282,11 @@
 
 
 
-         <article class="flex-column" id="article-three">
+         <article class="flex__container" id="article-three">
             <section class="social__cta">
 
                <h4>
-                  Follow our design and development work across social media!
+                  Follow my design and development work across these networks!
                </h4>
 
             </section>
@@ -292,70 +300,87 @@
 
          <div class="footer__section-top">
             <ul class="footer__sig">
-               <li><span>2018 <i class="far fa-copyright"></i> Spatial Operations</span>
+               <li><span>2018 <i class="far fa-copyright" aria-label="Copyright icon"></i> Spatial Operations</span>
             </ul> 
             <ul class="footer__social">
-               <li><a href="#"><i class="far fa-envelope"></i></a></li>             
-               <li><a href="https://www.facebook.com" data-tool-tip="Social accounts to come"><i class="fab fa-facebook-f"></i></a></li>
-               <li><a href="https://www.instagram.com" data-tool-tip="Social accounts to come"><i class="fab fa-instagram"></i></a></li>
-               <li><a href="https://www.twitter.com" data-tool-tip="Social accounts to come"><i class="fab fa-twitter"></i></a></li>
-               <li><a href="https://www.linkedin.com" data-tool-tip="Social accounts to come"><i class="fab fa-linkedin"></i></a></li>
-               <li><a href="https://www.dribbble.com" data-tool-tip="Social accounts to come"><i class="fab fa-dribbble"></i></a></li>
-               <li><a href="https://www.behance.net" data-tool-tip="Social accounts to come"><i class="fab fa-behance"></i></a></li>
-               <li><a href="https://www.github.com" data-tool-tip="Social accounts to come"><i class="fab fa-github"></i></a></li>
+               <li>
+                  <a href="mailto:daniel@spatialoperations.com"><i class="far fa-envelope" aria-label="Send email"></i></a>
+               </li>             
+               <li>
+                  <a href="https://www.facebook.com/spatialoperations"><i class="fab fa-facebook-f" aria-label="Link to facebook page"></i></a>
+               </li>
+               <li>
+                  <a href="https://www.instagram.com/spatialoperations"><i class="fab fa-instagram" aria-label="Link to instagram page"></i></a>
+               </li>
+               <!--<li>
+                  <a href="https://www.twitter.com" data-tool-tip="Social accounts to come" data-position="top"><i class="fab fa-twitter" aria-label="Link to twitter page"></i></a>
+               </li>-->
+               <li>
+                  <a href="https://www.dribbble.com" data-tool-tip="Social accounts to come" data-position="top"><i class="fab fa-dribbble" aria-label="Link to dribble page"></i></a>
+               </li>
+               <li>
+                  <a href="https://www.behance.net" data-tool-tip="Social accounts to come" data-position="top"><i class="fab fa-behance" aria-label="Link to behance page"></i></a>
+               </li>
+               <li>
+                  <a href="https://www.github.com" data-tool-tip="Social accounts to come" data-position="top"><i class="fab fa-github" aria-label="Link to github page"></i></a>
+               </li>
+               <li>
+                  <a href="https://www.linkedin.com/in/sniderde/"><i class="fab fa-linkedin" aria-label="Link to linkedin page"></i></a>
+               </li>
             </ul>
             <ul class="footer__love">
-               <li>Made with <i class="fas fa-heart"></i> in Atlanta</li>
+               <li>Made with <i class="fas fa-heart" aria-label="Heart icon"></i> in Atlanta</li>
             </ul>           
          </div>
 
          <div class="footer__section-bottom">
             <ul class="footer__tools">
-               <!--<li class="weather__location">
-                  <a href="#" id="loc-atlanta" data-tool-tip="Data to come from API">Atlanta</a>
+<!--                <li class="weather__location">
+                  <a href="#" id="loc-atlanta" data-tool-tip="Data to come from API" data-position="top">Atlanta</a>
                   <div>
-                     <p><i class="far fa-sun"></i></p>
+                     <p><i class="far fa-sun" aria-label="Sun icon"></i></p>
                      <p>&nbsp;87&#176;</p>
                   </div>
                </li>
                <li class="weather__location">
-                  <a href="#" id="loc-austin" data-tool-tip="Data to come from API">Austin</a>
+                  <a href="#" id="loc-austin" data-tool-tip="Data to come from API" data-position="top">Austin</a>
                   <div>
-                     <p><i class="far fa-sun"></i></p>
+                     <p><i class="far fa-sun" aria-label="Sun icon"></i></p>
                      <p>&nbsp;95&#176;</p>
                   </div>
                </li>
                <li class="weather__location">
-                  <a href="#" id="loc-boston" data-tool-tip="Data to come from API">Boston</a>
+                  <a href="#" id="loc-boston" data-tool-tip="Data to come from API" data-position="top">Boston</a>
                   <div>
-                     <p><i class="far fa-sun"></i></p>
+                     <p><i class="far fa-sun" aria-label="Sun icon"></i></p>
                      <p>&nbsp;82&#176;</p>
                   </div>
                </li>
                <li class="weather__location">
-                  <a href="#" id="loc-toronto" data-tool-tip="Data to come from API">Toronto</a>
+                  <a href="#" id="loc-toronto" ddata-tool-tip="Data to come from API" data-position="top">Toronto</a>
                   <div>
-                     <p><i class="far fa-sun"></i></p>
+                     <p><i class="far fa-sun" aria-label="Sun icon"></i></p>
                      <p>&nbsp;81&#176;</p>
                   </div>
                </li>
                <li class="weather__location">
-                  <a href="#" id="loc-barcelona" data-tool-tip="Data to come from API">Barcelona</a>
+                  <a href="#" id="loc-barcelona" data-tool-tip="Data to come from API" data-position="top">Barcelona</a>
                   <div>
-                     <p><i class="far fa-sun"></i></p>
+                     <p><i class="far fa-sun" aria-label="Sun icon"></i></p>
                      <p>&nbsp;86&#176;</p>
                   </div>
                </li>
                <li class="weather__location">
-                  <a href="#" id="loc-cincinnati" data-tool-tip="Data to come from API">Cincinnati</a>
+                  <a href="#" id="loc-cincinnati" data-tool-tip="Data to come from API" data-position="top">Cincinnati</a>
                   <div>
-                     <p><i class="far fa-sun"></i></p>
+                     <p><i class="far fa-sun" aria-label="Sun icon"></i></p>
                      <p>&nbsp;83&#176;</p>
                   </div>
-               </li>-->
+               </li> -->
             </ul>
          </div>         
       </footer>         
+
 
 
       <script src="js/script.js"></script>

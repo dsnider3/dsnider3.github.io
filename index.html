@@ -4,14 +4,20 @@
 
    <head>
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+      <meta name="description" content="Spatial Operations - The creative Work of Daniel Snider">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>My Portfolio Site - HTML &amp; CSS</title>
-      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:200,200i,400,400i,700,700i" rel="stylesheet">      
+
+      <title>Home / Spatial Operations</title>
+
+      <link rel="icon" type="image/png" href="#">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,600,600i,700,700i|IBM+Plex+Serif:200,200i,400,400i,700,700i|Gloria+Hallelujah">             
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+      <link rel="stylesheet" type="text/css" href="css/normalize.css">
+      <link rel="stylesheet" type="text/css" media="screen" href="css/particles.css">
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <link rel="stylesheet" type="text/css" href="css/devices.css">
-      <link rel="stylesheet" type="text/css" media="screen" href="css/particles.css">
    </head>
    
    <body>
@@ -24,68 +30,87 @@
 
       <header id="header">
 
+         <a class="logo-link" href="index.html"><img class="nav-logo" src="img/so-logo-icon.svg" alt="Spatial operations logo"/></a>
          <input type="checkbox" class="nav-toggle" id="nav-toggle">
-         <label for="nav-toggle" class="nav-toggle-label">
-<!--             <button class="hamburger hamburger--spin" type="button">
-               <span class="hamburger-box">
-                  <span class="hamburger-inner"></span>
-               </span>
-            </button>   -->
-            <span class="nav-hamburger"><i class="fas fa-bars"></i></span>         
-         </label>
+         <label class="hamburger hamburger--spin nav-toggle-label" for="nav-toggle" aria-label="Menu" aria-controls="navigation" aria-expanded="true/false">
+            <span class="hamburger-box">
+               <span class="hamburger-inner"></span>
+            </span>
+         </label>    
+
 
          <nav id="navbar">
 
-            <img class="nav-logo" src="img/so-logo-icon.svg" alt="hero image">
-
             <ul class="nav__container">
-               <li class="nav-link" tabindex="2"><span class="link-number">01</span><a href="#">About</a></li>
-               <li class="nav-link" tabindex="3"><span class="link-number">02</span><a href="#">Services</a></li>
-<!--           <li class="flexspace"></li>-->               
-               <li class="nav-link" tabindex="4"><span class="link-number">03</span><a href="#">Work</a></li>
-<!--                <li class="nav-link"><span class="link-number">04</span><a href="#">Manifesto</a></li>
- -->               <li class="nav-link" tabindex="5"><span class="link-number">04</span><a href="#">Resume / CV</a></li>
+               <li class="list-item"><a href="resume.html" class="nav-link" data="01">Resume / CV</a></li>
+               <li class="list-item"><a href="services.html" class="nav-link" data="02">Services</a></li>
+               <li class="list-item" data-tool-tip="Social accounts to come" data-position="top"><a class="nav-link" data="03">Work</a></li>
+               <li class="list-item"><a href="resources.html" class="nav-link" data="04">Resources</a></li>
             </ul>
 
             <hr class="hr-menu"/>
 
-            <a class="button" href="mailto:manudan711@gmail.com" alt="Contact Now button">Contact Now</a>
+            <h6>For new projects, collaboration inquiries, or if you just want to say hello, reach out to me below.</h6>
+
+            <a class="button" href="mailto:manudan711@gmail.com" aria-label="Contact now button via email">Contact Now</a>
 
             <ul class="nav__social">
-               <li><a href="#"><i class="far fa-envelope"></i></a></li>             
-               <li><a href="https://www.facebook.com" data-tool-tip="Social accounts to come"><i class="fab fa-facebook-f"></i></a></li>
-               <li><a href="https://www.instagram.com" data-tool-tip="Social accounts to come"><i class="fab fa-instagram"></i></a></li>
-               <li><a href="https://www.twitter.com" data-tool-tip="Social accounts to come"><i class="fab fa-twitter"></i></a></li>
-               <li><a href="https://www.linkedin.com" data-tool-tip="Social accounts to come"><i class="fab fa-linkedin"></i></a></li>
-               <li><a href="https://www.dribbble.com" data-tool-tip="Social accounts to come"><i class="fab fa-dribbble"></i></a></li>
-               <li><a href="https://www.behance.net" data-tool-tip="Social accounts to come"><i class="fab fa-behance"></i></a></li>
-               <li><a href="https://www.github.com" data-tool-tip="Social accounts to come"><i class="fab fa-github"></i></a></li>
+               <li>
+                  <a href="mailto:daniel@spatialoperations.com" aria-label="Send email"><i class="far fa-envelope"></i></a>
+               </li>             
+               <li>
+                  <a href="https://www.facebook.com/spatialoperations" aria-label="Link to facebook page"><i class="fab fa-facebook-f"></i></a>
+               </li>
+               <li>
+                  <a href="https://www.instagram.com/spatialoperations" aria-label="Link to instagram page"><i class="fab fa-instagram"></i></a>
+               </li>
+<!--                <li>
+                  <a href="https://www.twitter.com" data-tool-tip="Social accounts to come" data-position="top"><i class="fab fa-twitter"></i></a>
+               </li> -->
+               <li>
+                  <a href="https://www.dribbble.com" aria-label="Link to dribble page" data-tool-tip="Social accounts to come" data-position="top"><i class="fab fa-dribbble"></i></a>
+               </li>
+               <li>
+                  <a href="https://www.behance.net" aria-label="Link to behance page" data-tool-tip="Social accounts to come" data-position="top"><i class="fab fa-behance"></i></a>
+               </li>
+               <li>
+                  <a href="https://www.github.com" aria-label="Link to github page" data-tool-tip="Social accounts to come" data-position="top"><i class="fab fa-github"></i></a>
+               </li>
+               <li>
+                  <a href="https://www.linkedin.com/in/sniderde/" aria-label="Link to LinkedIn page"><i class="fab fa-linkedin"></i></a>
+               </li>
             </ul>
 
          </nav>
+
       </header>
+
+
 
       <div id="particles-js"></div>
 
 
-      <section class="hero" id="homeCover">
+      <section class="hero" id="homeCover" aria-label="Background vector artwork of constellations in night sky above a white mountainscape">
          <div class="hero-transition">
             <div class="hero-transition-img" id="homeTransition"></div>
          </div>
          <div class="hero__inner">
-            <img class="logo" src="img/so-logo-hero.svg" alt="hero image">
+            <img class="logo" src="img/so-logo-hero.svg" alt="Spatial Operations logo above vector artwork"/>
             <h1 class="hero__title">Welcome</h1>
-            <a class="anchor__button" id="anchor" href="#about"><span class="fas fa-angle-double-down"></span></a>
+            <a class="anchor__button" id="anchor" href="#intro" aria-label="Anchor button to intro statement"><span class="fas fa-angle-double-down"></span></a>
          </div>
       </section>
 
 
 
-      <section class="flex-column" id="about">
+      <section class="flex__container" id="intro">
          <div class="site__description">
 
             <h4>
-               <span class="bold">Spatial Operations</span> is a showcase of creative pursuits by multi-disciplinary designer and front-end developer Daniel Snider.  His work spans the fields of web development, graphic design, animation, architecture, and urban design.  Spatial Operations as a name is derived from the unique design exercises that define "space" across various mediums.  My creative work gives meaning to an environment, a mission, an identity, a message and/or a product.
+               <span class="bold-primary">Spatial Operations</span> is a showcase of creative work by multi-disciplinary designer and front-end developer <span class="italic">Daniel Snider</span>.  I do visual design that delivers beautiful products across various digital formats, dynamic infographics, brand identity, and environmental graphics.  My professional work also includes web development, 2D animation, and print design.  
+            </h4>
+            <h4>
+               Spatial Operations as a name is derived from the unique design exercises to each medium of creativity that define <span class="underline">space</span>.  My work gives shape to an environment, a mission, an identity, a message and/or a product.
             </h4>
 
          </div>
@@ -104,96 +129,122 @@
 
          <article class="grid__feature" id="article-one">
 
-
 <!--             <section class="feature__item">
                <div class="feature__abstract">
-                  <img class="feature__img" src="img/abstract/graphic3.svg" alt="Donorgraphics image preview">
-                  <div class="laptop">
-                     <figure class="l_top">
-                        <div class="l_screen">
-                           <img class="feature__img scroll1" src="img/pillyr-homepage.jpg" alt="The Pillyr Foundation website image preview" width="100%">
-                        </div>
-                        <div class="l_camera">
-                        </div>
-                     </figure>
-                     <figure class="l_bottom">
-                        <hr class="l_divider"/>
-                        <div class="l_latch">
-                        </div>
-                     </figure>
-                  </div>
-               </div>
-               <div class="feature__context">
-                  <h3 class="card__heading" alt="The Pillyr Foundation">The Pillyr Foundation</h3>
-                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i>&nbsp;&nbsp;<i class="fas fa-code" alt="design &amp; development"></i></p>
-                  <p class="card__description" alt="Project description: Branding, design, and web development for Atlanta nonprofit organization">Branding, design, and web development for this nonprofit organization focused on improving public space in the city of Atlanta.</p>
-                  <a class="card__button" href="https://www.pillyr.org" target="_blank" alt="The Pillyr Foundation — Learn more button">Learn More</a>
-               </div>
-            </section>
-
-
-            <hr class="hr-feature"/> -->
-
-
-            <section class="feature__item">
-               <div class="feature__abstract">
-                  <img class="feature__img" src="img/abstract/graphic.svg" alt="abstract background">
+                  <img class="feature__img" src="img/abstract/graphic.svg" alt="abstract vector background behind case study preview"/>
                   <figure class="tablet">
                      <div class="t_cam">
                      </div>
                      <div class="t_screen">
-                        <img class="feature__img scrollA" src="img/pillyr-homepage.jpg" alt="The Pillyr Foundation website preview" width="100%">
+                        <img class="feature__img scrollA" src="img/pillyr-homepage.jpg" alt="The Pillyr Foundation website preview" width="100%"/>
                      </div>
                      <div class="t_button_home">
                      </div>
                   </figure>
                </div>
                <div class="feature__context">
-                  <h3 class="card__heading" alt="The Pillyr Foundation">The Pillyr Foundation</h3>
-                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i>&nbsp;&nbsp;<i class="fas fa-code" alt="design &amp; development"></i></p>
-                  <p class="card__description" alt="Project description: Branding, design, and web development for Atlanta nonprofit organization">Branding, design, and web development for this nonprofit organization focused on improving public space in the city of Atlanta.</p>
-                  <a class="card__button" href="case-one.html" alt="The Pillyr Foundation — Learn more button">Learn More</a>
+                  <h3 class="card__heading">The Pillyr Foundation</h3>
+                  <p class="card__icons">
+                     <span data-tool-tip="Visual Design" data-position="top"><i class="far fa-newspaper" aria-label="graphic design icon"></i></span>&nbsp;&nbsp;
+                     <span data-tool-tip="Web Development" data-position="top"><i class="fas fa-code" aria-label="web development icon"></i></span>&nbsp;&nbsp;
+                     <span data-tool-tip="Branding" data-position="top"><i class="fas fa-stamp" aria-label="branding icon"></i></span>&nbsp;&nbsp;
+                     <span data-tool-tip="Animation" data-position="top"><i class="fas fa-rocket" aria-label="animation icon"></i></span>&nbsp;&nbsp;
+                     <span data-tool-tip="Print Design" data-position="top"><i class="fas fa-map" aria-label="print icon"></i></span>&nbsp;&nbsp;
+                     <span data-tool-tip="Data Visualization" data-position="top"><i class="fas fa-chart-bar" aria-label="infographic icon"></i></span>
+                  </p>
+                  <p class="card__description">Branding, design, and web development for this nonprofit organization focused on improving public space in the city of Atlanta.</p>
+                  <a class="card__button" href="case-one.html" aria-label="The Pillyr Foundation — Learn more button">Learn More</a>
                </div>
-            </section>
+            </section> -->
 
-
-            <hr class="hr-feature"/>
-
-
-            <section class="feature__item flip">
+            <section class="feature__item">
                <div class="feature__abstract">
-                  <img class="feature__img" src="img/abstract/graphic2.svg" alt="abstract background">
+                  <img class="feature__img" src="img/abstract/graphic.svg" alt="abstract vector background behind case study preview"/>
                   <figure class="smartphone">
                      <div class="s_cam_speaker">
                      </div>
                      <div class="s_screen">
-                        <img class="feature__img scrollB" src="img/2017-donorgraphics.jpg" alt="Donorgraphics image preview" width="100%">
+                        <img class="feature__img scrollA" src="img/pillyr-homepage.jpg" alt="The Pillyr Foundation website preview" width="100%"/>
                      </div>
                      <div class="s_button_home">
                      </div>
                   </figure>
                </div>
                <div class="feature__context">
-                  <h3 class="card__heading" alt="Donorgraphics">Donorgraphics</h3>
-                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i></p>
-                  <p class="card__description" alt="Project description: Using donor data collected by agency One &amp; All, these infographics were designed to communicate changes to annual donor behavior.">Using donor data collected by agency One &amp; All, these infographics were designed to communicate changes to annual donor behavior. A One &amp; All agency project.</p>
-                  <a class="card__button" href="case-two.html" alt="Donorgraphics - Learn more button">Learn More</a>
+                  <h3 class="card__heading">The Pillyr Foundation</h3>
+                  <p class="card__icons">
+                     <span data-tool-tip="Visual Design" data-position="top"><i class="far fa-newspaper" aria-label="graphic design icon"></i></span>&nbsp;&nbsp;
+                     <span data-tool-tip="Web Development" data-position="top"><i class="fas fa-code" aria-label="web development icon"></i></span>&nbsp;&nbsp;
+                     <span data-tool-tip="Branding" data-position="top"><i class="fas fa-stamp" aria-label="branding icon"></i></span>&nbsp;&nbsp;
+                     <span data-tool-tip="Animation" data-position="top"><i class="fas fa-rocket" aria-label="animation icon"></i></span>&nbsp;&nbsp;
+                     <span data-tool-tip="Print Design" data-position="top"><i class="fas fa-map" aria-label="print icon"></i></span>&nbsp;&nbsp;
+                     <span data-tool-tip="Data Visualization" data-position="top"><i class="fas fa-chart-bar" aria-label="infographic icon"></i></span>
+                  </p>
+                  <p class="card__description">Branding, design, and web development for this nonprofit organization focused on improving public space in the city of Atlanta.</p>
+                  <a class="card__button" href="case-one.html" aria-label="The Pillyr Foundation — Learn more button">Learn More</a>
                </div>
             </section>
 
+            <hr class="hr-feature"/>
+
+            <section class="feature__item flip">
+               <div class="feature__abstract">
+                  <img class="feature__img" src="img/abstract/graphic2.svg" alt="abstract vector background behind case study preview"/>
+                  <figure class="smartphone">
+                     <div class="s_cam_speaker">
+                     </div>
+                     <div class="s_screen">
+                        <img class="feature__img scrollB" src="img/2017-donorgraphics.jpg" alt="Donorgraphics preview" width="100%"/>
+                     </div>
+                     <div class="s_button_home">
+                     </div>
+                  </figure>
+               </div>
+               <div class="feature__context">
+                  <h3 class="card__heading">Donorgraphics</h3>
+                  <p class="card__icons">
+                     <span data-tool-tip="Visual Design" data-position="top"><i class="far fa-newspaper" aria-label="graphic design icon"></i></span>&nbsp;&nbsp;
+                     <span data-tool-tip="Data Visualization" data-position="top"><i class="fas fa-chart-bar" aria-label="infographic icon"></i></span>
+                  </p>
+                  <p class="card__description">Using donor data collected by agency One &amp; All, these infographics were designed to communicate changes to annual donor behavior. A One &amp; All agency project.</p>
+                  <a class="card__button" href="case-two.html" aria-label="Donorgraphics - Learn more button">Learn More</a>
+               </div>
+            </section>
 
             <hr class="hr-feature"/>
 
-
             <section class="feature__item">
                <div class="feature__abstract">
-                  <img class="feature__img" src="img/abstract/graphic3.svg" alt="Donorgraphics image preview">
+                  <img class="feature__img" src="img/abstract/graphic3.svg" alt="abstract vector background behind case study preview"/>
+                  <figure class="smartphone">
+                     <div class="s_cam_speaker">
+                     </div>
+                     <div class="s_screen">
+                        <img class="feature__img scrollC" src="img/olivecrest-homepage.jpg" alt="Olivecrest preview" width="100%"/>
+                     </div>
+                     <div class="s_button_home">
+                     </div>
+                  </figure>
+               </div>
+               <div class="feature__context">
+                  <h3 class="card__heading">Olivecrest</h3>
+                  <p class="card__icons">
+                     <span data-tool-tip="Visual Design" data-position="top"><i class="far fa-newspaper" aria-label="graphic design icon"></i></span>&nbsp;&nbsp;
+                  </p>
+                  <p class="card__description">Olivecrest helps at-risk children that lack a safe home.  Efforts focused on website design that covered the needs of each organization chapter. A One &amp; All agency project.</p>
+                  <a class="card__button" href="case-three.html" aria-label="Olivecrest website - Learn more button">Learn More</a>
+               </div>
+            </section>
+
+<!--             <section class="feature__item">
+               <div class="feature__abstract">
+                  <img class="feature__img" src="img/abstract/graphic3.svg" alt="abstract vector background behind case study preview"/>
                   <figure class="desktop">
                      <hr class="d_divider"/>
                      <div class="d_cam">
                      </div>
                      <div class="d_screen">
-                        <img class="feature__img scrollC" src="img/olivecrest-homepage.jpg" alt="Olivecrest website preview" width="100%">
+                        <img class="feature__img scrollC" src="img/olivecrest-homepage.jpg" alt="Olivecrest website preview" width="100%"/>
                      </div>
                      <div class="d_button_home">
                      </div>
@@ -201,13 +252,14 @@
                   </figure>
                </div>
                <div class="feature__context">
-                  <h3 class="card__heading" alt="Olivecrest">Olivecrest</h3>
-                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i></p>
-                  <p class="card__description" alt="Project description: Olivecrest transforms the lives of at-risk children through the healing power of family.  Efforts focused on website design that covered the needs of each organization chapter.">Olivecrest helps at-risk children that lack a safe home.  Efforts focused on website design that covered the needs of each organization chapter. A One &amp; All agency project.</p>
-                  <a class="card__button" href="case-three.html" alt="Olivecrest website - Learn more button">Learn More</a>
+                  <h3 class="card__heading">Olivecrest</h3>
+                  <p class="card__icons">
+                     <span data-tool-tip="Visual Design" data-position="top"><i class="far fa-newspaper" aria-label="graphic design icon"></i></span>&nbsp;&nbsp;
+                  </p>
+                  <p class="card__description">Olivecrest helps at-risk children that lack a safe home.  Efforts focused on website design that covered the needs of each organization chapter. A One &amp; All agency project.</p>
+                  <a class="card__button" href="case-three.html" aria-label="Olivecrest website - Learn more button">Learn More</a>
                </div>
-            </section>
-
+            </section> -->
 
          </article>
 
@@ -215,28 +267,52 @@
 
 
 
-      <section class="flex-column" id="clients">
+      <section class="client__container" id="clients">
          <div class="site__description">
 
             <h4>
-               <span class="bold">Who I have worked with? </span> Here are some clients and employers.
+               <span class="bold-primary">Who I have worked with? </span> Here are some clients and employers.
             </h4>
 
          </div>
 
          <div class="grid__logo">
-            <img class="logo__img square" src="img/logos/tsa.svg" alt="The Salvation Army">
-            <img class="logo__img wide" src="img/logos/oa.svg" alt="One & All Agency">
-            <img class="logo__img wide" src="img/logos/prm.svg" alt="Phoenix Rescue Mission">
-            <img class="logo__img square" src="img/logos/ahs.svg" alt="Atlanta Humane Society">
-            <img class="logo__img wide" src="img/logos/am.png" alt="Atlanta Mission">
-            <img class="logo__img square" src="img/logos/hssv.svg" alt="Humane Society Silicon Valley">
-            <img class="logo__img square" src="img/logos/fh.svg" alt="Fred Hutch">
-            <img class="logo__img wide" src="img/logos/tpf.svg" alt="The Pillyr Foundation">
-            <img class="logo__img wide" src="img/logos/brn.svg" alt="Beltline Rail Now">
-            <img class="logo__img wide" src="img/logos/oc.svg" alt="Olivecrest">
-            <img class="logo__img square" src="img/logos/tw.svg" alt="Terminal West at King Plow">
-            <img class="logo__img square" src="img/logos/chpf.svg" alt="Children's Hospital of Pittsburgh Foundation">
+            <a href="https://www.salvationarmyusa.org" aria-label="Link to the salvation army website">
+               <img class="logo__img square" src="img/logos/tsa.svg" alt="The Salvation Army logo"/>
+            </a>
+            <a href="https://www.oneandall.com" aria-label="Link to the one & all agency website">
+               <img class="logo__img wide" src="img/logos/oa.svg" alt="One & All Agency logo"/>
+            </a>
+            <a href="https://phoenixrescuemission.org" aria-label="Link to the phoenix rescue mission website">
+               <img class="logo__img wide" src="img/logos/prm.svg" alt="Phoenix Rescue Mission logo"/>
+            </a>
+            <a href="https://atlantahumane.org" aria-label="Link to the atlanta humane society website">
+               <img class="logo__img square" src="img/logos/ahs.svg" alt="Atlanta Humane Society logo"/>
+            </a>
+            <a href="https://atlantamission.org" aria-label="Link to the atlanta mission website">
+               <img class="logo__img wide" src="img/logos/am.png" alt="Atlanta Mission logo"/>
+            </a>
+            <a href="http://www.hssv.org" aria-label="Link to the humane society silicon valley website">
+               <img class="logo__img square" src="img/logos/hssv.svg" alt="Humane Society Silicon Valley logo"/>
+            </a>
+            <a href="https://www.fredhutch.org" aria-label="Link to the fred hutch website">
+               <img class="logo__img square" src="img/logos/fh.svg" alt="Fred Hutch logo"/>
+            </a>
+            <a href="https://www.pillyr.org" aria-label="Link to the pillyr foundation website">
+               <img class="logo__img wide" src="img/logos/tpf.svg" alt="The Pillyr Foundation logo"/>
+            </a>
+            <a href="https://beltlinerailnow.com" aria-label="Link to the beltline rail now website">
+               <img class="logo__img wide" src="img/logos/brn.svg" alt="Beltline Rail Now logo"/>
+            </a>
+            <a href="https://www.olivecrest.org" aria-label="Link to the olivecrest website">
+               <img class="logo__img wide" src="img/logos/oc.svg" alt="Olivecrest logo"/>
+            </a>
+            <a href="http://terminalwestatl.com" aria-label="Link to the terminal west website">
+               <img class="logo__img square" src="img/logos/tw.svg" alt="Terminal West at King Plow logo"/>
+            </a>
+            <a href="https://www.givetochildrens.org" aria-label="Link to the children's hospital of pittsburgh foundation website">
+               <img class="logo__img square" src="img/logos/chpf.svg" alt="Children's Hospital of Pittsburgh Foundation logo"/>
+            </a>
          </div>
       </section>  
 
@@ -250,110 +326,155 @@
             </h3>
          </div>
 
-
-         <article class="grid__showcase" id="article-two">
+         <article class="grid__showcase" id="article-three">
 
             <section class="showcase__item card__container">
-               <img class="card__img img-right" src="img/more-projects/allenenorth.jpg" alt="#">
+               <img class="card__img img-right" src="img/more-projects/allenenorth.jpg" alt="Beltline Rail Now promo image"/>
                <div class="card__overlay">
-                  <h3 class="card__heading" alt="Beltline Rail Now">Beltline Rail Now</h3>
-                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i></p>
-                  <p class="card__description" alt="Project description:">This Atlanta-based transit advocacy group aims to shape the narrative of investment priorities towards a generational project that could impact millions and ease regional traffic congestion.</p>
-                  <a class="card__button" href="#" target="_blank" alt="#">Learn More</a>
+                  <h3 class="card__heading">Beltline Rail Now</h3>
+                  <p class="card__icons">
+                     <span data-tool-tip="Branding" data-position="top"><i class="fas fa-stamp" aria-label="branding icon"></i></span>
+                  </p>
+                  <p class="card__description">This Atlanta-based transit advocacy group aims to shape the narrative of investment priorities towards a generational project that could impact millions and ease regional traffic congestion.</p>
+                  <a class="card__button" href="#" target="_blank" aria-label="Learn More button">Learn More</a>
                </div>
             </section>
 
             <section class="showcase__item card__container">
-               <img class="card__img img-center" src="img/more-projects/taxlaw.jpg" alt=#">
+               <img class="card__img img-center" src="img/more-projects/taxlaw.jpg" alt="Tax law vector image showing calculator and tax prep items"/>
                <div class="card__overlay">
-                  <h3 class="card__heading" alt="One and all tax infographic">One &amp; All Tax Infographic</h3>
-                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i></p>
-                  <p class="card__description" alt="Project description:">This project was created to inform One &amp; All clients how to understand new tax law changes that were passed by Congress to take effect the following year.</p>
-                  <a class="card__button" href="#" target="_blank" alt="#">Learn More</a>
+                  <h3 class="card__heading">One &amp; All Tax Infographic</h3>
+                  <p class="card__icons">
+                     <span data-tool-tip="Visual Design" data-position="top"><i class="far fa-newspaper" aria-label="graphic design icon"></i></span>&nbsp;&nbsp;
+                     <span data-tool-tip="Data Visualization" data-position="top"><i class="fas fa-chart-bar" aria-label="infographic icon"></i></span>
+                  </p>
+                  <p class="card__description">This project was created to inform One &amp; All clients how to understand new tax law changes that were passed by Congress to take effect the following year.</p>
+                  <a class="card__button" href="#" target="_blank" aria-label="Learn More button">Learn More</a>
                </div>
             </section>
 
 <!--             <section class="showcase__item card__container">
-               <img class="card__img img-center" src="https://picsum.photos/1400/1052" alt="#">
+               <img class="card__img img-center" src="https://picsum.photos/1400/1052" alt="Unsplash placeholder image"/>
                <div class="card__overlay">
-                  <h3 class="card__heading" alt="One and all">One &amp; All</h3>
-                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i>&nbsp;&nbsp;<i class="fas fa-code" alt="design &amp; development"></i></p>
-                  <p class="card__description" alt="Project description:">Following the merger of Grizzard and Russ Reid, One &amp; All became the resulting company leading in fundraising services for nonprofits.  I was tasked with designing company assets using the new brand identity.</p>
-                  <a class="card__button" href="#" target="_blank" alt="#">Learn More</a>
+                  <h3 class="card__heading">One &amp; All</h3>
+                  <p class="card__icons">
+                     <span data-tool-tip="Visual Design" data-position="top"><i class="far fa-newspaper" aria-label="graphic design icon"></i></span>&nbsp;&nbsp;
+                  </p>
+                  <p class="card__description">Following the merger of Grizzard and Russ Reid, One &amp; All became the resulting company leading in fundraising services for nonprofits.  I was tasked with designing company assets using the new brand identity.</p>
+                  <a class="card__button" href="#" target="_blank" aria-label="Learn More button">Learn More</a>
                </div>
             </section> -->
             
             <section class="showcase__item card__container">
-               <img class="card__img img-center" src="img/more-projects/grizzard-cover.jpg" alt="placeholder image from unsplash">
+               <img class="card__img img-center" src="img/more-projects/grizzard-cover.jpg" alt="Low-poly cover image for grizzard branding"/>
                <div class="card__overlay">
-                  <h3 class="card__heading" alt="Grizzard Communication Group">Grizzard</h3>
-                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i>&nbsp;&nbsp;<i class="fas fa-code" alt="design &amp; development"></i></p>
-                  <p class="card__description" alt="Project description: Grizzard Communications Group was a fundraising agency under the Omnicom umbrella. In 2016, the agency was in need of a rebrand of its visual identity system and I was tasked with that responsibility.">Grizzard Communications Group was a fundraising agency under the Omnicom umbrella. In 2016, the agency was in need of a rebrand of its visual identity system and I was tasked with that responsibility.</p>
-                  <a class="card__button" href="#" target="_blank" alt="#">Learn More</a>
+                  <h3 class="card__heading">Grizzard</h3>
+                  <p class="card__icons">
+                     <span data-tool-tip="Visual Design" data-position="top"><i class="far fa-newspaper" aria-label="graphic design icon"></i></span>&nbsp;&nbsp;
+                     <span data-tool-tip="Web Development" data-position="top"><i class="fas fa-code" aria-label="web development icon"></i></span>&nbsp;&nbsp;
+                     <span data-tool-tip="Branding" data-position="top"><i class="fas fa-stamp" aria-label="branding icon"></i></span>&nbsp;&nbsp;
+                     <span data-tool-tip="Print Design" data-position="top"><i class="fas fa-map" aria-label="print icon"></i></span>
+                  </p>
+                  <p class="card__description">Grizzard Communications Group was a fundraising agency under the Omnicom umbrella. In 2016, the agency was in need of a rebrand of its visual identity system and I was tasked with that responsibility.</p>
+                  <a class="card__button" href="#" target="_blank" aria-label="Learn More button">Learn More</a>
                </div>
             </section>
             
             <section class="showcase__item card__container">
-               <img class="card__img img-center" src="img/more-projects/jorg-karg-524156.jpg" alt="#">
+               <img class="card__img img-center" src="img/more-projects/jorg-karg-524156.jpg" alt="Homeless man cover image to Salvation Army projects"/>
                <div class="card__overlay">
-                  <h3 class="card__heading" alt="The salvation army">The Salvation Army</h3>
-                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i>&nbsp;&nbsp;<i class="fas fa-code" alt="design &amp; development"></i></p>
-                  <p class="card__description" alt="Project description: Various assets from digital to print designed for various commands in The Salvation Army. Work created during my time at One &amp; All / Grizzard">Various assets from digital to print designed for various commands in The Salvation Army. Created during my time at One &amp; All / Grizzard.</p>
-                  <a class="card__button" href="#" target="_blank" alt="#">Learn More</a>
+                  <h3 class="card__heading">The Salvation Army</h3>
+                  <p class="card__icons">
+                     <span data-tool-tip="Visual Design" data-position="top"><i class="far fa-newspaper" aria-label="graphic design icon"></i></span>&nbsp;&nbsp;
+                     <span data-tool-tip="Print Design" data-position="top"><i class="fas fa-map" aria-label="print icon"></i></span>
+                  </p>
+                  <p class="card__description">Various assets from digital to print designed for various commands in The Salvation Army. Created during my time at One &amp; All / Grizzard.</p>
+                  <a class="card__button" href="#" target="_blank" aria-label="Learn More button">Learn More</a>
                </div>
             </section>
 
             <section class="showcase__item card__container">
-               <img class="card__img img-center" src="https://picsum.photos/1400/1055" alt="#">
+               <img class="card__img img-center" src="img/more-projects/prm-cover.jpg" alt="Phoenix rescue mission cover image showing piggy bank donation graphic"/>
                <div class="card__overlay">
-                  <h3 class="card__heading" alt="Phoenix rescue mission">Phoenix Rescue Mission</h3>
-                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i>&nbsp;&nbsp;<i class="fas fa-code" alt="design &amp; development"></i></p>
-                  <p class="card__description" alt="Project description: A handful of assets from digital to print media designed for Phoenix Rescue Mission. This work was created during my time at One &amp; All / Grizzard.">A handful of assets from digital to print media designed for Phoenix Rescue Mission. Created during my time at One &amp; All / Grizzard.</p>
-                  <a class="card__button" href="#" target="_blank" alt="#">Learn More</a>
+                  <h3 class="card__heading">Phoenix Rescue Mission</h3>
+                  <p class="card__icons">
+                     <span data-tool-tip="Visual Design" data-position="top"><i class="far fa-newspaper" aria-label="graphic design icon"></i></span>
+                  </p>
+                  <p class="card__description">A handful of assets from digital to print media designed for Phoenix Rescue Mission. Created during my time at One &amp; All / Grizzard.</p>
+                  <a class="card__button" href="#" target="_blank" aria-label="Learn More button">Learn More</a>
                </div>
             </section>
 
-            <section class="showcase__item card__container">
-               <img class="card__img img-center" src="https://picsum.photos/1400/1056" alt="#">
+<!--             <section class="showcase__item card__container">
+               <img class="card__img img-center" src="https://picsum.photos/1400/1056" alt="Unsplash placeholder image"/>
                <div class="card__overlay">
-                  <h3 class="card__heading" alt="Animal care clients">Animal Care Clients</h3>
-                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i>&nbsp;&nbsp;<i class="fas fa-code" alt="design &amp; development"></i></p>
-                  <p class="card__description" alt="Project description: Showcasing designed assets for various animal care clients of One &amp; All, including San Diego Humane Society, Humane Society Silicon Valley, and more!">Showcasing designed assets for various animal care clients of One &amp; All, including San Diego Humane Society, Humane Society Silicon Valley, and more!</p>
-                  <a class="card__button" href="#" target="_blank" alt="#">Learn More</a>
+                  <h3 class="card__heading">Animal Care Clients</h3>
+                  <p class="card__icons">
+                     <span data-tool-tip="Visual Design" data-position="top"><i class="far fa-newspaper" aria-label="graphic design icon"></i></span>&nbsp;&nbsp;
+                  </p>
+                  <p class="card__description">Showcasing designed assets for various animal care clients of One &amp; All, including San Diego Humane Society, Humane Society Silicon Valley, and more!</p>
+                  <a class="card__button" href="#" target="_blank" aria-label="Learn More button">Learn More</a>
                </div>
-             </section>
-            
+            </section> -->
+
             <section class="showcase__item card__container">
-               <img class="card__img img-center" src="https://picsum.photos/1400/1057" alt="#">
+               <img class="card__img img-center" src="img/more-projects/fredhutch.jpg" alt="Fred hutch microscopic cell graphic cover"/>
                <div class="card__overlay">
-                  <h3 class="card__heading" alt="Other Rescue Missions">Other Rescue Missions</h3>
-                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i>&nbsp;&nbsp;<i class="fas fa-code" alt="design &amp; development"></i></p>
-                  <p class="card__description" alt="Homelessness and hunger continue to be global issues.  Here in the United States, Rescue Missions provide charitable good by tackling these human needs within our cities. This work was created during my time at One &amp; All / Grizzard.">Homelessness and hunger continue to be global issues.  Rescue Missions provide charitable good by tackling these challenges within our cities. Created at One &amp; All / Grizzard.</p>
-                  <a class="card__button" href="#" target="_blank" alt="#">Learn More</a>
-               </div>
-            </section>
-            
-            <section class="showcase__item card__container">
-               <img class="card__img img-center" src="https://picsum.photos/1400/1058" alt="#">
-               <div class="card__overlay">
-                  <h3 class="card__heading" alt="Cue La Musique Zine">Cue La Musique Zine</h3>
-                  <p class="card__icons"><i class="fas fa-pencil-alt" alt="graphic design"></i>&nbsp;&nbsp;<i class="fas fa-code" alt="design &amp; development"></i></p>
-                  <p class="card__description" alt="Cue La Musique was a digital music magazine based in Atlanta GA from 2014 to 2015.  Three issues were released with design and editorial direction led by yours truly.">Cue La Musique was a digital music magazine based in Atlanta GA from 2014 to 2015.  Three magazine issues and the publication website were released with design and editorial direction led by yours truly.</p>
-                  <a class="card__button" href="https://issuu.com/cuelamusique" target="_blank" alt="#">Learn More</a>
+                  <h3 class="card__heading">Fred Hutch</h3>
+                  <p class="card__icons">
+                     <span data-tool-tip="Visual Design" data-position="top"><i class="far fa-newspaper" aria-label="graphic design icon"></i></span>&nbsp;&nbsp;
+                     <span data-tool-tip="Print Design" data-position="top"><i class="fas fa-map" aria-label="print icon"></i></span>
+                  </p>
+                  <p class="card__description">Fred Hutchinson Cancer Center provides lifesaving cancer treatment and research to eliminate cancer and related diseases that cause human suffering and death. Created at One &amp; All / Grizzard.</p>
+                  <a class="card__button" href="#" target="_blank" aria-label="Learn More button">Learn More</a>
                </div>
             </section>
+            
+<!--             <section class="showcase__item card__container">
+               <img class="card__img img-center" src="https://picsum.photos/1400/1057" alt="Unsplash placeholder image"/>
+               <div class="card__overlay">
+                  <h3 class="card__heading">Other Rescue Missions</h3>
+                  <p class="card__icons">
+                     <span data-tool-tip="Visual Design" data-position="top"><i class="far fa-newspaper" aria-label="graphic design icon"></i></span>&nbsp;&nbsp;
+                  </p>
+                  <p class="card__description">Homelessness and hunger continue to be global issues.  Rescue Missions provide charitable good by tackling these challenges within our cities. Created at One &amp; All / Grizzard.</p>
+                  <a class="card__button" href="#" target="_blank" aria-label="Learn More button">Learn More</a>
+               </div>
+            </section> -->
+            
+            <section class="showcase__item card__container">
+               <img class="card__img img-center" src="img/more-projects/cuelamusique-cover.jpg" alt="Image of third issue cover for cue la musique magazine"/>
+               <div class="card__overlay">
+                  <h3 class="card__heading">Cue La Musique Zine</h3>
+                  <p class="card__icons">
+                     <span data-tool-tip="Visual Design" data-position="top"><i class="far fa-newspaper" aria-label="graphic design icon"></i></span>&nbsp;&nbsp;
+                     <span data-tool-tip="Web Development" data-position="top"><i class="fas fa-code" aria-label="web development icon"></i></span>&nbsp;&nbsp;
+                     <span data-tool-tip="Branding" data-position="top"><i class="fas fa-stamp" aria-label="branding icon"></i></span>
+                  </p>
+                  <p class="card__description">Cue La Musique was a digital music magazine based in Atlanta GA from 2014 to 2015.  Three magazine issues and the publication website were released with design and editorial direction led by yours truly.</p>
+                  <a class="card__button" href="https://issuu.com/cuelamusique" target="_blank" aria-label="Learn More button">Learn More</a>
+               </div>
+            </section>
+
+            <section class="card__container-more">
+                  <h3 class="card__heading">More Projects <br/>To Come</h3>
+            </section>
+
          </article>
 
 
-         <article class="flex-column" id="article-three">
+
+         <article class="flex__container" id="article-five">
             <section class="social__cta">
 
                <h4>
-                  Follow our design and development work across social media!
+                  Follow my design and development work across these networks!
                </h4>
 
             </section>
          </article>
+
+
 
       </main>
 
@@ -363,64 +484,80 @@
 
          <div class="footer__section-top">
             <ul class="footer__sig">
-               <li><span>2018 <i class="far fa-copyright"></i> Spatial Operations</span>
+               <li><span>2018 <i class="far fa-copyright" aria-label="Copyright icon"></i> Spatial Operations</span>
             </ul> 
             <ul class="footer__social">
-               <li><a href="#"><i class="far fa-envelope"></i></a></li>             
-               <li><a href="https://www.facebook.com" data-tool-tip="Social accounts to come"><i class="fab fa-facebook-f"></i></a></li>
-               <li><a href="https://www.instagram.com" data-tool-tip="Social accounts to come"><i class="fab fa-instagram"></i></a></li>
-               <li><a href="https://www.twitter.com" data-tool-tip="Social accounts to come"><i class="fab fa-twitter"></i></a></li>
-               <li><a href="https://www.linkedin.com" data-tool-tip="Social accounts to come"><i class="fab fa-linkedin"></i></a></li>
-               <li><a href="https://www.dribbble.com" data-tool-tip="Social accounts to come"><i class="fab fa-dribbble"></i></a></li>
-               <li><a href="https://www.behance.net" data-tool-tip="Social accounts to come"><i class="fab fa-behance"></i></a></li>
-               <li><a href="https://www.github.com" data-tool-tip="Social accounts to come"><i class="fab fa-github"></i></a></li>
+               <li>
+                  <a href="mailto:daniel@spatialoperations.com"><i class="far fa-envelope" aria-label="Send email"></i></a>
+               </li>             
+               <li>
+                  <a href="https://www.facebook.com/spatialoperations"><i class="fab fa-facebook-f" aria-label="Link to facebook page"></i></a>
+               </li>
+               <li>
+                  <a href="https://www.instagram.com/spatialoperations"><i class="fab fa-instagram" aria-label="Link to instagram page"></i></a>
+               </li>
+               <!--<li>
+                  <a href="https://www.twitter.com" data-tool-tip="Social accounts to come" data-position="top"><i class="fab fa-twitter" aria-label="Link to twitter page"></i></a>
+               </li>-->
+               <li>
+                  <a href="https://www.dribbble.com" data-tool-tip="Social accounts to come" data-position="top"><i class="fab fa-dribbble" aria-label="Link to dribble page"></i></a>
+               </li>
+               <li>
+                  <a href="https://www.behance.net" data-tool-tip="Social accounts to come" data-position="top"><i class="fab fa-behance" aria-label="Link to behance page"></i></a>
+               </li>
+               <li>
+                  <a href="https://www.github.com" data-tool-tip="Social accounts to come" data-position="top"><i class="fab fa-github" aria-label="Link to github page"></i></a>
+               </li>
+               <li>
+                  <a href="https://www.linkedin.com/in/sniderde/"><i class="fab fa-linkedin" aria-label="Link to linkedin page"></i></a>
+               </li>
             </ul>
             <ul class="footer__love">
-               <li>Made with <i class="fas fa-heart"></i> in Atlanta</li>
+               <li>Made with <i class="fas fa-heart" aria-label="Heart icon"></i> in Atlanta</li>
             </ul>           
          </div>
 
          <div class="footer__section-bottom">
             <ul class="footer__tools">
 <!--                <li class="weather__location">
-                  <a href="#" id="loc-atlanta" data-tool-tip="Data to come from API">Atlanta</a>
+                  <a href="#" id="loc-atlanta" data-tool-tip="Data to come from API" data-position="top">Atlanta</a>
                   <div>
-                     <p><i class="far fa-sun"></i></p>
+                     <p><i class="far fa-sun" aria-label="Sun icon"></i></p>
                      <p>&nbsp;87&#176;</p>
                   </div>
                </li>
                <li class="weather__location">
-                  <a href="#" id="loc-austin" data-tool-tip="Data to come from API">Austin</a>
+                  <a href="#" id="loc-austin" data-tool-tip="Data to come from API" data-position="top">Austin</a>
                   <div>
-                     <p><i class="far fa-sun"></i></p>
+                     <p><i class="far fa-sun" aria-label="Sun icon"></i></p>
                      <p>&nbsp;95&#176;</p>
                   </div>
                </li>
                <li class="weather__location">
-                  <a href="#" id="loc-boston" data-tool-tip="Data to come from API">Boston</a>
+                  <a href="#" id="loc-boston" data-tool-tip="Data to come from API" data-position="top">Boston</a>
                   <div>
-                     <p><i class="far fa-sun"></i></p>
+                     <p><i class="far fa-sun" aria-label="Sun icon"></i></p>
                      <p>&nbsp;82&#176;</p>
                   </div>
                </li>
                <li class="weather__location">
-                  <a href="#" id="loc-toronto" data-tool-tip="Data to come from API">Toronto</a>
+                  <a href="#" id="loc-toronto" ddata-tool-tip="Data to come from API" data-position="top">Toronto</a>
                   <div>
-                     <p><i class="far fa-sun"></i></p>
+                     <p><i class="far fa-sun" aria-label="Sun icon"></i></p>
                      <p>&nbsp;81&#176;</p>
                   </div>
                </li>
                <li class="weather__location">
-                  <a href="#" id="loc-barcelona" data-tool-tip="Data to come from API">Barcelona</a>
+                  <a href="#" id="loc-barcelona" data-tool-tip="Data to come from API" data-position="top">Barcelona</a>
                   <div>
-                     <p><i class="far fa-sun"></i></p>
+                     <p><i class="far fa-sun" aria-label="Sun icon"></i></p>
                      <p>&nbsp;86&#176;</p>
                   </div>
                </li>
                <li class="weather__location">
-                  <a href="#" id="loc-cincinnati" data-tool-tip="Data to come from API">Cincinnati</a>
+                  <a href="#" id="loc-cincinnati" data-tool-tip="Data to come from API" data-position="top">Cincinnati</a>
                   <div>
-                     <p><i class="far fa-sun"></i></p>
+                     <p><i class="far fa-sun" aria-label="Sun icon"></i></p>
                      <p>&nbsp;83&#176;</p>
                   </div>
                </li> -->

@@ -219,20 +219,19 @@ figure {
 
 
 .browser {
-    border-radius: 20px 20px 0 0;
+    border-radius: 15px;
     border: 4px solid rgba(36, 51, 138, 0.95);
     background: rgba(255,255,255,0.95);
     position: relative;
-    height: 600px;
+    height: 650px;
     width: 600px;
     margin-top: 20%;
-    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.25);
-    z-index: -1;
-    transform: scale(0.4);
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.25);
+    transform: scale(0.5);
     margin: 0 auto;
 }
 
-.hero__cases-right .browser {
+.hero__cases-mockup .browser {
     position: absolute;
 }
 
@@ -253,13 +252,14 @@ figure {
 .b_screen {
     position: absolute;
     margin: 0 auto;
+    border-radius: 0 0 15px 15px;
     border: 2px solid rgba(36, 51, 138, 0.95);
     box-shadow: 0 0 0 2px rgba(36, 51, 138, 0.25) inset;
-    left: 3px;
+    left: -2px;
     top: 40px;
     overflow: hidden;
-    height: 550px;
-    width: 585px;
+    height: 605px;
+    width: 596px;
 }
 
 
@@ -301,7 +301,7 @@ figure {
     transform: rotate(90deg) scale(0.55);
 }
 
-.hero__cases-right .tablet {
+.hero__cases-mockup .tablet {
     position: absolute;
 }
 
@@ -456,7 +456,6 @@ figure {
     }
     .browser {
         transform: scale(0.6);
-        margin: 0 auto;
     }
 }
 
@@ -485,8 +484,13 @@ figure {
         grid-row-gap: 30px;
     }
     .browser {
-        transform: scale(0.7);
-        margin: 0 auto;
+        transform: scale(0.75);
+        height: 500px;
+        width: 600px;
+    }
+    .b_screen {
+        height: 455px;
+        width: 596px;
     }
 }
 
@@ -517,11 +521,11 @@ figure {
         transform: rotate(0deg) scale(0.4);
     }
     .s_screen {
-        left: -54.5px;
-        bottom: 140px;
-        width: 415px;
-        height: 300px;
-        transform: rotate(-90deg);
+        left: 3.5px;
+        bottom: 85px;
+        width: 300px;
+        height: 415px;
+        transform: rotate(0deg);
     }
 /*    .t_screen {
         height: 500px;
@@ -547,7 +551,13 @@ figure {
     }
     .browser {
         transform: scale(0.85);
-        margin: 0 auto;
+        height: 400px;
+        width: 600px;
+        box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.25);
+    }
+    .b_screen {
+        height: 355px;
+        width: 596px;
     }
 }
 
@@ -570,6 +580,9 @@ figure {
     .grid__image {
         grid-gap: 30px;
     }
+    .browser {
+        transform: scale(1);
+    }
 }
 
 
@@ -583,13 +596,13 @@ figure {
     .tablet {
         transform: rotate(90deg) scale(0.45);
     }
-/*    .s_screen {
+    .s_screen {
         left: -54.5px;
         bottom: 140px;
-        height: 300px;
         width: 415px;
+        height: 300px;
         transform: rotate(-90deg);
-    }*/
+    }
     .t_screen {
         left: -47.5px;
         bottom: 100px;
@@ -602,6 +615,16 @@ figure {
     }
     .cases__mockup {
          grid-template-rows: 500px;
+    }
+    .browser {
+        transform: scale(0.8) perspective(50em) rotateY(-20deg);
+        height: 500px;
+        width: 600px;
+        box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.25);
+    }
+    .b_screen {
+        height: 455px;
+        width: 596px;
     }
 }
 
@@ -627,8 +650,7 @@ figure {
         transform: rotate(0deg) scale(0.65);
     }
     .browser {
-        transform: scale(0.9);
-        margin: -200px 0 0 45%;
+        transform: scale(0.8) perspective(50em) rotateY(-20deg);
     }
 }
 
@@ -661,15 +683,14 @@ figure {
         transition: all 0.5s ease-in-out;
     }
     .desktop:hover {
-        transform: scale(0.8);
+        transform: scale(0.65);
         transition: all 0.5s ease-in-out;
     }
     .hero__cases-right .tablet {
         transform: rotate(90deg) scale(0.85);
     }
     .browser {
-        transform: scale(1);
-        margin: -150px 0 0 52.5%;
+        transform: scale(0.9) perspective(50em) rotateY(-20deg);
     }
 }
 
@@ -680,5 +701,9 @@ figure {
     }
     .hero__cases-right .tablet {
         transform: rotate(90deg) scale(0.9);
+    }
+    .browser {
+        transform: scale(1) perspective(50em) rotateY(-20deg);
+
     }
 }

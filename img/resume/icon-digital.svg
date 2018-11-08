@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 576 576" style="enable-background:new 0 0 576 576;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#9E1F63;stroke:#9E1F63;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;stroke:#9E1F63;stroke-width:1.15;}
+	.st2{fill:#CE8FB1;stroke:#9E1F63;stroke-width:1.15;}
+	.st3{fill:#FFFFFF;stroke:#9E1F63;stroke-width:0.57;stroke-linecap:square;}
+	.st4{fill:#CE8FB1;stroke:#9E1F63;stroke-width:0.57;}
+	.st5{fill:#9E1F63;stroke:#9E1F63;stroke-width:0.57;}
+	.st6{fill:#FDFDFD;stroke:#9E1F63;stroke-width:0.88;}
+	.st7{fill:#B6578A;stroke:#9E1F63;stroke-width:0.44;}
+	.st8{fill:#CE8FB1;stroke:#9E1F63;stroke-width:0.44;}
+	.st9{fill:#FDFDFD;stroke:#CC1D24;stroke-width:0.88;}
+	.st10{fill:#FFFFFF;stroke:#9E1F63;stroke-width:0.88;}
+</style>
+<title>icon</title>
+<circle class="st0" cx="288" cy="288" r="288"/>
+<g id="Page-1">
+	<g id="Laptop">
+		<path id="bezel" class="st1" d="M430.4,184.2H145.6c-7.9,0-14.3,6.4-14.4,14.2v187.3h313.5V198.4
+			C444.6,190.6,438.2,184.2,430.4,184.2z"/>
+		<circle id="webcam" class="st2" cx="288.5" cy="195.1" r="2.3"/>
+		<g id="bottom">
+			<path id="Shape" class="st1" d="M457.2,403.5H118.8c-17.6,0-29.5-6-29.5-8.6v-7.8c0.1-0.8,0.8-1.5,1.7-1.4h394
+				c0.9-0.1,1.6,0.5,1.7,1.4v8.1C486.7,397.3,477.5,403.5,457.2,403.5z"/>
+			<path id="Line" class="st3" d="M89.6,394h396"/>
+		</g>
+		<rect id="screen" x="143.9" y="206.6" class="st4" width="287.7" height="167.7"/>
+		<path id="touchpad" class="st5" d="M331,386.3v1.8c0,1.3-2.5,1.6-4.4,1.6h-77.2c-2,0-4.5-0.4-4.5-1.6v-1.8"/>
+	</g>
+	<g id="iphone">
+		<path id="bezel-2" class="st6" d="M400.4,344.2c0,3.9-3.2,7-7.1,7h-43.1c-3.9,0-7-3.1-7.1-7V237.8c0-3.9,3.2-7,7.1-7h43.1
+			c3.9,0,7,3.1,7.1,7V344.2z"/>
+		<rect id="screen-2" x="347.2" y="246.5" class="st7" width="49.2" height="87.6"/>
+		<path id="speaker" class="st8" d="M377.1,242c0,0.3-0.2,0.5-0.4,0.5h-8.8c-0.3,0-0.4-0.2-0.4-0.5v-1.1c0-0.3,0.2-0.5,0.4-0.5h8.8
+			c0.3,0,0.4,0.2,0.4,0.5V242z"/>
+		<circle id="camera" class="st8" cx="372.2" cy="236" r="1.3"/>
+		<ellipse id="lock" class="st8" cx="371.8" cy="342.5" rx="4.4" ry="4.4"/>
+	</g>
+	<g id="IPAD">
+		<path id="bezel-3" class="st9" d="M314.1,250.1v84c0,2.9-2.4,5.3-5.3,5.3H180c-2.9,0-5.3-2.4-5.3-5.3c0,0,0,0,0,0v-84
+			c0-2.9,2.4-5.3,5.3-5.3c0,0,0,0,0,0h128.8C311.8,244.8,314.1,247.2,314.1,250.1C314.1,250.1,314.1,250.1,314.1,250.1z"/>
+		<path id="bezel-2-2" class="st10" d="M314.1,250.1v84c0,2.9-2.4,5.3-5.3,5.3H180c-2.9,0-5.3-2.4-5.3-5.3c0,0,0,0,0,0v-84
+			c0-2.9,2.4-5.3,5.3-5.3c0,0,0,0,0,0h128.8C311.8,244.8,314.1,247.2,314.1,250.1C314.1,250.1,314.1,250.1,314.1,250.1z"/>
+		<rect id="screen-3" x="188.7" y="251.9" class="st7" width="111.3" height="80.1"/>
+		<circle id="lock-2" class="st8" cx="306.6" cy="291.9" r="3.5"/>
+		<circle id="camera-2" class="st8" cx="182.1" cy="292.3" r="1.3"/>
+	</g>
+</g>
+</svg>
